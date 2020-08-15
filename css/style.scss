@@ -112,8 +112,8 @@ p {
     background-color: #f5f5f5;
     color: #212832;
     font-weight: bold;
-    font-size: 15px;
-    font-family: 'CaviarDreams';
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
     border: white solid 2px;
     padding-top: 0.2px;
     padding-bottom: 0.2px;
@@ -189,7 +189,7 @@ p {
 }
 
 .botonSubs {
-    font-family: 'CaviarDreams';
+    font-family: 'Raleway', sans-serif;
     color: white;
     background-image: linear-gradient(#212832, #3d495c, #212832);
     font-size: 15px;
@@ -228,6 +228,7 @@ p {
 }
 
 .h3biografia {
+
     color: white;
     font-style: oblique;
     letter-spacing: 2px;
@@ -236,7 +237,7 @@ p {
     margin-top: 5px;
 }
 
-.parrafoacercaDeMi  {
+.parrafoacercaDeMi {
     color: white;
     margin: 30px;
     text-align: justify;
@@ -254,7 +255,7 @@ p {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-style: italic;
-    
+
 }
 
 .botonMas {
@@ -298,9 +299,9 @@ p {
     margin: 30px;
     margin-top: 10px;
     text-align: justify;
-    
+
     .masAcercaDeMi-parrafo {
-       text-align: center;
+        text-align: center;
     }
 }
 
@@ -331,7 +332,7 @@ p {
     color: #262626;
     margin-top: 10px;
     font-family: 'CaviarDreams';
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -371,7 +372,7 @@ p {
     margin-top: 10px;
     margin-bottom: 1px;
     font-family: 'CaviarDreams';
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     letter-spacing: 1px;
     font-weight: bold;
@@ -390,19 +391,19 @@ p {
     font-family: 'CaviarDreams';
     color: white;
     background-image: linear-gradient(#212832, #3d495c, #212832);
-    font-size: 15px;
+    font-size: 12px;
     @include sizes(100px, 30px);
     text-align: center;
     border: solid 2px #212832;
     margin-top: 0;
     letter-spacing: 1px;
-    border-radius: 5px;
+    border-radius: 0px;
 
     &:hover {
         background-color: #3d495c;
         border: solid 2px #3d495c;
         font-weight: bold;
-        transform: scale(1.1, 1.1);
+        transform: scale(1.01, 1.01);
     }
 }
 
@@ -484,7 +485,7 @@ p {
     margin: 30px;
     margin-top: 10px;
     text-align: justify;
-    
+
 }
 
 .firma-articulos {
@@ -498,8 +499,18 @@ p {
 .firma-articulos__imagen {
     @include sizes(200px, 45px);
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     text-align: right;
+}
+
+.container-articulo__icono {
+    color: #3d495c;
+    font-size: 30px;
+    opacity: 60%;
+
+    &:hover {
+        opacity: 100%;
+    }
 }
 
 /* Articulos = Ser Responsables*/
@@ -522,7 +533,7 @@ p {
     color: #262626;
     margin-top: 10px;
     font-family: 'CaviarDreams';
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -554,7 +565,7 @@ p {
     color: #262626;
     margin-top: 10px;
     font-family: 'CaviarDreams';
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -574,7 +585,7 @@ p {
     padding: 10px;
     color: white;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-family: 'CaviarDreams';
     font-size: 20px;
     letter-spacing: 2px;
@@ -586,7 +597,7 @@ p {
     color: #212832;
     margin-top: 10px;
     font-family: 'CaviarDreams';
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -619,91 +630,139 @@ p {
     margin-bottom: 100px;
 }
 
-.frases__imagen--sc {
-    @include sizes(250px, 250px);
-    margin-top: 40px;
-    border: #ed5752 3px solid;
+.frases-imagenes-redes--iconos {
+    color: #3d495c;
+    font-size: 30px;
+    opacity: 60%;
 
     &:hover {
-        transform: scale(1.05, 1.05);
+        opacity: 100%;
+    }
+}
+
+.frases__imagen--sc {
+    @include sizes(200px, 200px);
+    margin-top: 40px;
+    border: #ed5752 3px solid;
+    margin-bottom: 10px;
+
+    &:hover {
+        transform: scale(1.01, 1.01);
     }
 }
 
 .frases__imagen--sr {
     @include sizes(250px, 250px);
     margin-top: 40px;
+    margin-bottom: 10px;
     border: #a1be95 3px solid;
 
     &:hover {
-        transform: scale(1.05, 1.05);
+        transform: scale(1.01, 1.01);
     }
 }
 
 .frases__imagen--vv {
     @include sizes(250px, 250px);
     margin-top: 40px;
+    margin-bottom: 10px;
     border: #92aac7 3px solid;
 
     &:hover {
-        transform: scale(1.05, 1.05);
+        transform: scale(1.01, 1.01);
     }
 }
 
 /* Podcast*/
 
-.contenedorPodcast {
+.contenedor-podcast {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-around;
-}
+    
 
-.podcast {
-    background-color: #e2dfa2;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: #3d495c 3px solid;
-    border-radius: 10px;
 
-    &:hover {
-        transform: scale(1.05, 1.05);
+    .podcast-nuevo {
+        background-image: linear-gradient(to top right, #3d495c 0%, #e2dfa2 100%);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        border-radius: 5px;
+        
+        .podcast-imagen {
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            margin-bottom: 0;
+            border-radius: 2px;
+            border: 1px solid #393d46;
+        }
+
+        .podcast-contenido {
+            
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5px;
+            
+
+
+            .h5podcast {
+                margin-top: 5px;
+                font-weight: bold;
+                color: #262626;
+
+            }
+
+            .h6podcast {
+                margin-left: 0;
+                margin-top: 2px;
+                margin-bottom: 0;
+                padding: 0;
+                color: black;
+                font-size: 14px;
+                font-weight: bold;
+                
+            }
+
+            
+
+            .podcast-iconos {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                align-content: center;
+                margin: 5px;
+
+
+                .podcast-iconos--img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 3px;
+                    margin: 2px;
+                    opacity: 80%;
+
+                    &:hover {
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 
-iframe {
-    background-color: #e2dfa2;
-    padding: 5px;
-    height: 165px;
-    border-radius: 10px;
-}
 
-.textoPodcast {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: left;
-    justify-content: flex-start;
-    height: 120px;
-    width: 300px;
-}
 
-.h5podcast {
-    margin-left: 10px;
-    margin-top: 10px;
-    font-weight: bold;
-}
 
-.h6podcast {
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
 
 /* Modal - Contacto*/
 
@@ -798,6 +857,8 @@ textarea {
     padding: 5px;
     margin-bottom: 10px;
 }
+
+
 
 /* footer*/
 
@@ -994,14 +1055,179 @@ footer {
 
     /* podcast*/
 
-    .podcast {
-        margin-left: 20px;
-        margin-right: 20px;
+    .contenedor-podcast {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        .podcast-nuevo {
+            background-image: linear-gradient(to top right, #3d495c 0%, #e2dfa2 100%);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border-radius: 5px;
+            
+            .podcast-imagen {
+                width: 150px;
+                height: 150px;
+                margin: 5px;
+                border-radius: 2px;
+                border: 1px solid #393d46;
+            }
+    
+            .podcast-contenido {
+                
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 5px;
+            
+                .h5podcast {
+                    margin-top: 5px;
+                    font-weight: bold;
+                    color: #262626;
+    
+                }
+    
+                .h6podcast {
+                    margin-left: 0;
+                    margin-top: 2px;
+                    margin-bottom: 0;
+                    padding: 0;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: bold;
+                    
+                }
+    
+                .podcast-iconos {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    justify-items: center;
+                    align-content: center;
+                    margin: 10px;
+                    margin-left: 0;
+    
+    
+                    .podcast-iconos--img {
+                        
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 3px;
+                        margin: 2px;
+                        opacity: 75%;
+    
+                        &:hover {
+                            opacity: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 
+    
     /* footer*/
 
     .linkApps {
         font-size: 15px;
+    }
+}
+
+/* MEDIA QUERY*/
+@media (min-width: 400px) and (max-width: 767px) {
+    /* podcast*/
+
+    .contenedor-podcast {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    
+    
+        .podcast-nuevo {
+            background-image: linear-gradient(to top right, #3d495c 0%, #e2dfa2 100%);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border-radius: 5px;
+            
+            .podcast-imagen {
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+                border-radius: 2px;
+                border: 1px solid #393d46;
+            }
+    
+            .podcast-contenido {
+                
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 5px;
+                
+    
+    
+                .h5podcast {
+                    margin-top: 5px;
+                    font-weight: bold;
+                    color: #262626;
+    
+                }
+    
+                .h6podcast {
+                    margin-left: 0;
+                    margin-top: 2px;
+                    margin-bottom: 0;
+                    padding: 0;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: bold;
+                    
+                }
+    
+                .podcast-iconos {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    justify-items: center;
+                    align-content: center;
+                    margin: 10px;
+                    margin-left: 0;
+    
+    
+                    .podcast-iconos--img {
+                        
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 3px;
+                        margin: 2px;
+                        opacity: 75%;
+    
+                        &:hover {
+                            opacity: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
