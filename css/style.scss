@@ -585,7 +585,7 @@ p {
     padding: 10px;
     color: white;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-family: 'CaviarDreams';
     font-size: 20px;
     letter-spacing: 2px;
@@ -632,7 +632,7 @@ p {
 
 .frases-imagenes-redes--iconos {
     color: #3d495c;
-    font-size: 30px;
+    font-size: 20px;
     opacity: 60%;
 
     &:hover {
@@ -641,7 +641,7 @@ p {
 }
 
 .frases__imagen--sc {
-    @include sizes(200px, 200px);
+    @include sizes(250px, 250px);
     margin-top: 40px;
     border: #ed5752 3px solid;
     margin-bottom: 10px;
@@ -673,18 +673,67 @@ p {
     }
 }
 
+/* Pagina de cada frase ser consciente*/
+
+.h2-frase-SC {
+    background-color: #ed5752;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'CaviarDreams';
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+.frase-sc-imagen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.contenedor-frase-sc--imagen {
+    @include sizes(320px, 320px);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: #ed5752 3px solid;
+    
+}
+.frese-imagen-titulo {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.frase-imagen--texto {
+    font-size: 20px;
+    margin: 10px;
+}
+.frase-firma-caro {
+    @include sizes(180px, 50px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* Podcast*/
+#section-fondo {
+  background-color:#3d495c ;  
+}
 
 .contenedor-podcast {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
     
-
-
     .podcast-nuevo {
-        background-image: linear-gradient(to top right, #3d495c 0%, #e2dfa2 100%);
+        
+        background-image: linear-gradient(to top right,#92aac7  10%, #212832 70%);
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -692,6 +741,7 @@ p {
         align-items: center;
         margin: 10px;
         border-radius: 5px;
+        
         
         .podcast-imagen {
             width: 80px;
@@ -705,7 +755,7 @@ p {
         .podcast-contenido {
             
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
@@ -716,8 +766,8 @@ p {
             .h5podcast {
                 margin-top: 5px;
                 font-weight: bold;
-                color: #262626;
-
+                color: white;
+                letter-spacing: 0.5px;
             }
 
             .h6podcast {
@@ -725,17 +775,13 @@ p {
                 margin-top: 2px;
                 margin-bottom: 0;
                 padding: 0;
-                color: black;
+                color: white;
                 font-size: 14px;
-                font-weight: bold;
-                
             }
-
-            
 
             .podcast-iconos {
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
@@ -869,7 +915,7 @@ footer {
 
     h5 {
         color: white;
-        margin-top: 30px;
+        margin-top: 15px;
     }
 }
 
@@ -900,6 +946,15 @@ footer {
         color: whitesmoke;
         transform: scale(1.3, 1.3);
     }
+}
+.footer-texto {
+    color: white;
+    opacity: 60%;
+    font-size: 11px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.3px;
+    padding-left: 3px;
+    scroll-padding-right: 3px;
 }
 
 /* MEDIA QUERY*/
@@ -1052,6 +1107,12 @@ footer {
     .frases__imagen--vv {
         @include sizes(300px, 300px);
     }
+    /* pagina de cada frase*/
+
+    .contenedor-frase-sc--imagen {
+        @include sizes(500px, 500px);
+       
+    }
 
     /* podcast*/
 
@@ -1062,7 +1123,7 @@ footer {
         justify-content: space-evenly;
         
         .podcast-nuevo {
-            background-image: linear-gradient(to top right, #3d495c 0%, #e2dfa2 100%);
+            background-image: linear-gradient(to top right,#92aac7  10%, #212832 70%);
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -1091,7 +1152,7 @@ footer {
                 .h5podcast {
                     margin-top: 5px;
                     font-weight: bold;
-                    color: #262626;
+                    color: white;
     
                 }
     
@@ -1100,9 +1161,9 @@ footer {
                     margin-top: 2px;
                     margin-bottom: 0;
                     padding: 0;
-                    color: black;
+                    color: white;
                     font-size: 14px;
-                    font-weight: bold;
+                    
                     
                 }
     
@@ -1156,7 +1217,7 @@ footer {
     
     
         .podcast-nuevo {
-            background-image: linear-gradient(to top right, #3d495c 0%, #e2dfa2 100%);
+            background-image: linear-gradient(to top right,#92aac7  10%, #212832 70%);
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -1187,7 +1248,7 @@ footer {
                 .h5podcast {
                     margin-top: 5px;
                     font-weight: bold;
-                    color: #262626;
+                    color: white;
     
                 }
     
@@ -1196,9 +1257,9 @@ footer {
                     margin-top: 2px;
                     margin-bottom: 0;
                     padding: 0;
-                    color: black;
+                    color: white;
                     font-size: 14px;
-                    font-weight: bold;
+                    
                     
                 }
     
