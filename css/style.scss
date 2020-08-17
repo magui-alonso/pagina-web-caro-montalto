@@ -627,7 +627,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .frases-imagenes-redes--iconos {
@@ -703,10 +703,11 @@ p {
     border: #ed5752 3px solid;
     
 }
-.frese-imagen-titulo {
+.frase-imagen-titulo {
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 .frase-imagen--texto {
     font-size: 20px;
