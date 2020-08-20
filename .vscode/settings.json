@@ -1,3 +1,9 @@
 {
-    "workbench.preferredLightColorTheme": "Default Dark+"
+    "workbench.preferredLightColorTheme": "Default Dark+",
+    "remote.extensionKind": {
+    
+        "pub.name": [
+            "ui"
+        ]
+    }
 }

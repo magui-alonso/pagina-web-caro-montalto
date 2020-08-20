@@ -106,7 +106,7 @@ p {
 
 /* index*/
 .carousel-inner .carousel-item img {
-  margin-top: 60px;
+  margin-top: 65px;
   height: 200px;
 }
 
@@ -277,7 +277,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 .h2biografia {
@@ -395,7 +395,7 @@ p {
   text-align: center;
   padding: 10px;
   color: white;
-  margin-top: 60px;
+  margin-top: 65px;
   margin-bottom: 0;
   font-family: 'CaviarDreams';
   font-size: 20px;
@@ -656,7 +656,7 @@ p {
   text-align: center;
   padding: 10px;
   color: white;
-  margin-top: 60px;
+  margin-top: 65px;
   margin-bottom: 0;
   font-family: 'CaviarDreams';
   font-size: 20px;
@@ -687,7 +687,7 @@ p {
   text-align: center;
   padding: 10px;
   color: white;
-  margin-top: 60px;
+  margin-top: 65px;
   margin-bottom: 0;
   font-family: 'CaviarDreams';
   font-size: 20px;
@@ -718,7 +718,7 @@ p {
   text-align: center;
   padding: 10px;
   color: white;
-  margin-top: 60px;
+  margin-top: 65px;
   margin-bottom: 0;
   font-family: 'CaviarDreams';
   font-size: 20px;
@@ -829,7 +829,7 @@ p {
   text-align: center;
   padding: 10px;
   color: white;
-  margin-top: 0;
+  margin-top: 65px;
   margin-bottom: 0;
   font-family: 'CaviarDreams';
   font-size: 20px;
@@ -901,7 +901,7 @@ p {
           justify-content: space-evenly;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .contenedor-podcast .podcast-nuevo {
