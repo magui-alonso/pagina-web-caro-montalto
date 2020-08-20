@@ -277,7 +277,7 @@ p {
     &:hover {
         font-weight: bold;
         color: #e2dfa2;
-        transform: scale(1.1, 1.1);
+        transform: scale(1.01, 1.01);
     }
 }
 
@@ -388,7 +388,7 @@ p {
 }
 
 .articulos__boton {
-    font-family: 'CaviarDreams';
+    font-family: 'Raleway', sans-serif;
     color: white;
     background-image: linear-gradient(#212832, #3d495c, #212832);
     font-size: 12px;
@@ -401,7 +401,7 @@ p {
 
     &:hover {
         background-color: #3d495c;
-        border: solid 2px #3d495c;
+        border: solid 2px #212832;
         font-weight: bold;
         transform: scale(1.01, 1.01);
     }
