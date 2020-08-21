@@ -111,7 +111,14 @@ p {
 
 .carousel-inner .carousel-item img {
     margin-top: 65px;
-    height: 200px;
+    height: 220px;
+}
+
+.carousel-control-prev {
+    margin-top: 50px;
+}
+.carousel-control-next  {
+    margin-top: 50px;
 }
 
 #boton-slide {
@@ -123,8 +130,8 @@ p {
     border: white solid 2px;
     padding-top: 0.2px;
     padding-bottom: 0.2px;
-    margin-top: 35px;
-    margin-bottom: 10px;
+    margin-top: 27px;
+    margin-bottom: 5px;
 
     &:hover {
         background-color: #e2dfa2;
@@ -1227,11 +1234,22 @@ footer {
     /* podcast*/
 
     .carousel-inner .carousel-item img {
-        height: 300px;
+        margin-top: 65px;
+        height: 270px;
     }
     #boton-slide {
         margin-bottom: 5px;
-        margin-top: 90px;
+        margin-top: 50px;
+    }
+    .carousel-control-prev {
+        margin-top: 50px;
+    }
+    .carousel-control-next  {
+        margin-top: 50px;
+    }
+    .titulo-slide {
+        font-size: 35px;
+        
     }
     .contenedor-podcast {
         display: flex;
