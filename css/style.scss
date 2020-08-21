@@ -63,7 +63,8 @@ p {
 /* Nav Bar*/
 
 .navbar {
-    background-image: linear-gradient(#212832, #3d495c, #212832);
+    background-image: linear-gradient(#212832, #212832, #212832);
+    
     
 }
 
@@ -96,15 +97,18 @@ p {
 }
 
 #item-drop1:hover {
-    background-color: #ed5752;
+    background-color: #e78a87;
+    color: white;
 }
 
 #item-drop2:hover {
     background-color: #a1be95;
+    color: white;
 }
 
 #item-drop3:hover {
     background-color: #92aac7;
+    color: white;
 }
 
 /* index*/
@@ -224,6 +228,7 @@ p {
 /* biografia*/
 
 .containerP1 {
+    border-top: #e2dfa2 solid 3px;
     background-color: #212832;
     display: flex;
     flex-direction: column;
@@ -247,8 +252,8 @@ p {
     color: white;
     font-style: oblique;
     letter-spacing: 2px;
-    padding-bottom: 15px;
-    border-bottom: #e2dfa2 solid 2px;
+    
+    
     margin-top: 5px;
 }
 
@@ -330,7 +335,7 @@ p {
 /* Articulos = Ser Conscientes*/
 
 .h2articulosSC {
-    background-color: #ed5752;
+    background-color: #e78a87;
     text-align: center;
     padding: 10px;
     color: white;
@@ -355,7 +360,7 @@ p {
 }
 
 .bordeH3SC {
-    border-bottom: #ed5752 2px solid;
+    border-bottom: #e78a87 2px solid;
     margin-left: 70px;
     margin-right: 70px;
 }
@@ -446,8 +451,8 @@ p {
 
 .contenedor-secciones-articulos__boton--sc {
     @extend .contenedor-secciones-articulos__boton;
-    background-image: linear-gradient(#ed5752, white, #ed5752);
-    border: solid 2px #ed5752;
+    background-image: linear-gradient(#e78a87, white, #e78a87);
+    border: solid 2px #e78a87;
     margin-top: 50px;
 
     &:hover {
@@ -492,7 +497,7 @@ p {
 .container-articulo__imagen {
     @include sizes(230px, 200px);
     margin: 40px;
-    border: #ed5752 4px solid;
+    border: #e78a87 4px solid;
 }
 
 .container-articulo__titulo {
@@ -598,7 +603,7 @@ p {
 /* Frases*/
 
 .h2frasesPodcastContacto {
-    background-color: #212832;
+    background-color: #3d495c;
     text-align: center;
     padding: 10px;
     color: white;
@@ -622,7 +627,7 @@ p {
 }
 
 .bordefrasesSC {
-    border-bottom: #ed5752 3px solid;
+    border-bottom: #e78a87 3px solid;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -661,7 +666,7 @@ p {
 .frases__imagen--sc {
     @include sizes(250px, 250px);
     margin-top: 40px;
-    border: #ed5752 3px solid;
+    border: #e78a87 3px solid;
     margin-bottom: 10px;
 
     &:hover {
@@ -694,7 +699,7 @@ p {
 /* Pagina de cada frase ser consciente*/
 
 .h2-frase-SC {
-    background-color: #ed5752;
+    background-color: #e78a87;
     text-align: center;
     padding: 10px;
     color: white;
@@ -718,7 +723,7 @@ p {
     @include sizes(320px, 320px);
     margin-top: 40px;
     margin-bottom: 20px;
-    border: #ed5752 3px solid;
+    border: #e78a87 3px solid;
     
 }
 .frase-imagen-titulo {
@@ -739,7 +744,7 @@ p {
 
 /* Podcast*/
 #section-fondo {
-  background-color:#3d495c ;  
+  background-color:#f5f5f5;  
 }
 
 .contenedor-podcast {
@@ -862,14 +867,15 @@ p {
 }
 
 #boton-close-modal {
-    background-color: #ed5752;
-    border: 1px solid #ed5752;
-    color: white;
+    background-color: white;
+    border: 1px solid white;
+    color: #212832;
     font-family: 'CaviarDreams';
+    font-weight: bold;
 
     &:hover {
-        font-weight: bold;
-        transform: scale(1.1, 1.1);
+        
+        transform: scale(1.03, 1.03);
     }
 }
 
@@ -989,7 +995,7 @@ footer {
         border: white solid 3px;
         @include sizes(100px, 40px);
         margin-bottom: 20px;
-        margin-top: 70px;
+        margin-top: 60px;
     }
 
     .frasePrincipal p {
@@ -1122,7 +1128,7 @@ footer {
 
     .container-articulo__imagen {
         @include sizes(450px, 300px);
-        border: #ed5752 4px solid;
+        border: #e78a87 4px solid;
     }
 
     /* frases*/
