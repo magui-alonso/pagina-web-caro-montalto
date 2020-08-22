@@ -53,7 +53,6 @@ h4 {
 
 p {
   font-family: 'Raleway', sans-serif;
-  font-style: italic;
   color: #262626;
 }
 
@@ -318,14 +317,9 @@ p {
   color: white;
 }
 
-.subrayado {
-  text-decoration: underline;
-}
-
 .lista-acerca-de-mi {
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-style: italic;
 }
 
 .botonMas {
@@ -430,69 +424,81 @@ p {
   margin-right: 70px;
 }
 
-.contenedorArt {
+.contenedor-articulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.section-blog-contenido--articulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.section-blog-contenido--imagen {
+  width: 300px;
+  height: 200px;
+}
+
+.section-blog-contenido--texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 100px;
-}
-
-.articulos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.articulos__imagen {
-  height: 160px;
   width: 300px;
-  margin-top: 40px;
-  border: 2px solid #212832;
-}
-
-.articulos__nombre {
-  color: #262626;
   margin-top: 10px;
-  margin-bottom: 1px;
-  font-family: 'CaviarDreams';
-  font-size: 15px;
-  text-align: left;
-  letter-spacing: 1px;
-  font-weight: bold;
 }
 
-.articulos__tipo {
-  color: grey;
-  margin-top: 1px;
-  padding-top: 1px;
-  font-family: 'CaviarDreams';
+.blog-articulo-redes--fecha {
+  font-family: 'Asap', sans-serif;
+  opacity: 50%;
   font-size: 15px;
-  text-align: left;
+  margin-bottom: 20px;
+}
+
+.blog-articulo-titulo {
+  font-family: 'Asap', sans-serif;
+  text-align: justify;
+  color: #394245;
+  font-size: 25px;
+}
+
+.blog-articulo-texto {
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+  font-size: 15px;
 }
 
 .articulos__boton {
@@ -503,7 +509,6 @@ p {
   font-size: 12px;
   height: 30px;
   width: 100px;
-  text-align: center;
   border: solid 2px #212832;
   margin-top: 0;
   letter-spacing: 1px;
@@ -609,12 +614,11 @@ p {
 
 .container-articulo__imagen {
   height: 200px;
-  width: 230px;
-  margin: 40px;
-  border: #e78a87 4px solid;
+  width: 90%;
 }
 
 .container-articulo__titulo {
+  font-size: 20px;
   margin: 10px;
 }
 
@@ -622,6 +626,22 @@ p {
   margin: 30px;
   margin-top: 10px;
   text-align: justify;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.sangria {
+  margin-left: 30px;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.lista-en-articulos {
+  font-family: 'Raleway', sans-serif;
 }
 
 .firma-articulos {
@@ -1334,6 +1354,35 @@ footer h5 {
     font-size: 40px;
     margin-top: 20px;
   }
+  /*articulos sc*/
+  .section-blog-contenido--articulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  .section-blog-contenido--imagen {
+    width: 500px;
+    height: 300px;
+  }
+  .section-blog-contenido--texto {
+    width: 600px;
+    margin-top: 0;
+    margin-left: 30px;
+  }
   /* pagina general articulos*/
   .contenedor-secciones-articulos {
     display: -webkit-box;
@@ -1378,7 +1427,9 @@ footer h5 {
   .container-articulo__imagen {
     height: 300px;
     width: 450px;
-    border: #e78a87 4px solid;
+  }
+  .container-articulo__titulo {
+    font-size: 30px;
   }
   /* frases*/
   .frases__imagen--sc,

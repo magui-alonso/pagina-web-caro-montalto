@@ -51,7 +51,7 @@ h4 {
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-style: italic;
+    
     color: #262626;
 }
 
@@ -253,8 +253,6 @@ p {
     color: white;
     font-style: oblique;
     letter-spacing: 2px;
-
-
     margin-top: 5px;
 }
 
@@ -268,14 +266,12 @@ p {
     }
 }
 
-.subrayado {
-    text-decoration: underline;
-}
+
 
 .lista-acerca-de-mi {
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-style: italic;
+    
 
 }
 
@@ -366,56 +362,66 @@ p {
     margin-right: 70px;
 }
 
-.contenedorArt {
+.contenedor-articulos {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+
+.section-blog-contenido--articulo {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    
+    
+}
+.section-blog-contenido--imagen {
+    width: 300px;
+    height: 200px;
+    
+}
+.section-blog-contenido--texto {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-}
-
-.articulos {
-    display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
     align-items: flex-start;
-}
-
-.articulos__imagen {
-    @include sizes(300px, 160px);
-    margin-top: 40px;
-    border: 2px solid #212832;
-}
-
-.articulos__nombre {
-    color: #262626;
+    width: 300px;
     margin-top: 10px;
-    margin-bottom: 1px;
-    font-family: 'CaviarDreams';
-    font-size: 15px;
-    text-align: left;
-    letter-spacing: 1px;
-    font-weight: bold;
+    
 }
-
-.articulos__tipo {
-    color: grey;
-    margin-top: 1px;
-    padding-top: 1px;
-    font-family: 'CaviarDreams';
+.blog-articulo-redes--fecha {
+    font-family: 'Asap', sans-serif;
+    opacity: 50%;
     font-size: 15px;
-    text-align: left;
+    margin-bottom: 20px;
 }
-
+.blog-articulo-titulo {
+    font-family: 'Asap', sans-serif;
+    text-align: justify;
+    color: #394245;
+    font-size: 25px;
+    
+}
+.blog-articulo-texto {
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    
+}
 .articulos__boton {
     font-family: 'Raleway', sans-serif;
     color: white;
     background-image: linear-gradient(#212832, #3d495c, #212832);
     font-size: 12px;
     @include sizes(100px, 30px);
-    text-align: center;
     border: solid 2px #212832;
     margin-top: 0;
     letter-spacing: 1px;
@@ -496,12 +502,13 @@ p {
 }
 
 .container-articulo__imagen {
-    @include sizes(230px, 200px);
-    margin: 40px;
-    border: #e78a87 4px solid;
+    @include sizes(90%, 200px);
+    
+    
 }
 
 .container-articulo__titulo {
+    font-size: 20px;
     margin: 10px;
 }
 
@@ -510,6 +517,18 @@ p {
     margin-top: 10px;
     text-align: justify;
 
+}
+.texto-centrado {
+    text-align: center;
+}
+.sangria {
+    margin-left: 30px;
+}
+.subrayado {
+    text-decoration: underline;
+}
+.lista-en-articulos {
+    font-family: 'Raleway', sans-serif;
 }
 
 .firma-articulos {
@@ -1141,6 +1160,36 @@ footer {
         font-size: 40px;
         margin-top: 20px;
     }
+    /*articulos sc*/
+
+    
+    .section-blog-contenido--articulo {
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .section-blog-contenido--imagen {
+        width: 500px;
+        height: 300px;
+        
+    }
+    .section-blog-contenido--texto {
+        
+        width: 600px;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+
+
+
+
+
 
     /* pagina general articulos*/
 
@@ -1180,7 +1229,11 @@ footer {
 
     .container-articulo__imagen {
         @include sizes(450px, 300px);
-        border: #e78a87 4px solid;
+        
+    }
+    .container-articulo__titulo {
+        font-size: 30px;
+        
     }
 
     /* frases*/
