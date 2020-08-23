@@ -453,15 +453,15 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 
 .section-blog-contenido--imagen {
-  width: 300px;
-  height: 200px;
+  height: 30%;
+  width: 90%;
 }
 
 .section-blog-contenido--texto {
@@ -477,7 +477,7 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 300px;
+  width: 90%;
   margin-top: 10px;
 }
 
@@ -490,9 +490,9 @@ p {
 
 .blog-articulo-titulo {
   font-family: 'Asap', sans-serif;
-  text-align: justify;
+  text-align: left;
   color: #394245;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .blog-articulo-texto {
@@ -613,17 +613,20 @@ p {
 }
 
 .container-articulo__imagen {
-  height: 200px;
+  height: 30%;
   width: 90%;
 }
 
 .container-articulo__titulo {
+  font-family: 'Asap', sans-serif;
   font-size: 20px;
-  margin: 10px;
+  margin-top: 10px;
+  width: 90%;
+  text-align: left;
 }
 
 .container-articulo__parrafo {
-  margin: 30px;
+  width: 90%;
   margin-top: 10px;
   text-align: justify;
 }
@@ -1236,7 +1239,7 @@ footer h5 {
 }
 
 /* MEDIA QUERY*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* index*/
   .carousel-inner .carousel-item img {
     height: 600px;
@@ -1371,17 +1374,18 @@ footer h5 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 90%;
     margin-bottom: 30px;
     margin-top: 40px;
   }
   .section-blog-contenido--imagen {
     width: 500px;
     height: 300px;
+    margin-right: 30px;
   }
   .section-blog-contenido--texto {
-    width: 600px;
+    width: 90%;
     margin-top: 0;
-    margin-left: 30px;
   }
   /* pagina general articulos*/
   .contenedor-secciones-articulos {
@@ -1407,29 +1411,27 @@ footer h5 {
     height: 120px;
     width: 800px;
   }
-  /* articulo*/
-  .articulos__imagen {
-    width: 350px;
-    height: 210px;
-  }
-  .firma-articulos__imagen {
-    height: 60px;
-    width: 250px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    text-align: right;
-  }
-  .container-articulo__parrafo {
-    margin: 250px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
+  /* cada articulo*/
   .container-articulo__imagen {
     height: 300px;
     width: 450px;
   }
   .container-articulo__titulo {
     font-size: 30px;
+    text-align: center;
+    width: 70%;
+  }
+  .container-articulo__parrafo {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .firma-articulos__imagen {
+    height: 60px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
   }
   /* frases*/
   .frases__imagen--sc,
@@ -1504,7 +1506,7 @@ footer h5 {
 }
 
 /* MEDIA QUERY*/
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 760px) {
   /* podcast*/
   .carousel-inner .carousel-item img {
     margin-top: 65px;
