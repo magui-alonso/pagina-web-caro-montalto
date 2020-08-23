@@ -369,15 +369,16 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    
+
 }
+
 .section-blog-contenido--articulo {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-   
+
 }
 
 .section-blog-contenido--imagen {
@@ -561,6 +562,29 @@ p {
     &:hover {
         opacity: 100%;
     }
+}
+
+.articulos__boton--volver {
+
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-image: linear-gradient(#212832, #3d495c, #212832);
+    opacity: 90%;
+    font-size: 12px;
+    @include sizes(150px, 30px);
+    border: solid 2px #212832;
+    margin-top: 20px;
+    letter-spacing: 0;
+    border-radius: 0px;
+
+    &:hover {
+        background-color: #3d495c;
+        border: solid 2px #212832;
+        font-weight: bold;
+        transform: scale(1.01, 1.01);
+    }
+
+
 }
 
 /* Articulos = Ser Responsables*/
@@ -1181,7 +1205,7 @@ footer {
         width: 90%;
         margin-bottom: 30px;
         margin-top: 40px;
-        
+
     }
 
     .section-blog-contenido--imagen {
@@ -1191,11 +1215,11 @@ footer {
 
     }
 
-    
+
     .section-blog-contenido--texto {
         width: 90%;
         margin-top: 0;
-        
+
     }
 
     /* pagina general articulos*/
