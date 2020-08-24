@@ -10,6 +10,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap');
 
+.body-background {
+    background-color: black;
+}
 
 /* grid1= index/biografia/contacto*/
 
@@ -116,10 +119,6 @@ p {
 .carousel-inner .carousel-item img {
     margin-top: 65px;
     height: 220px;
-}
-
-.carousel-control-prev {
-    margin-top: 50px;
 }
 
 .carousel-control-next {
@@ -653,8 +652,8 @@ p {
 
 /* Frases*/
 
-.h2frasesPodcastContacto {
-    background-color: #3d495c;
+.h2-frase-sc {
+    background-color: #e78a87;
     text-align: center;
     padding: 10px;
     color: white;
@@ -663,6 +662,31 @@ p {
     font-family: 'CaviarDreams';
     font-size: 20px;
     letter-spacing: 2px;
+
+}
+.h2-frase-sr {
+    background-color: #a1be95;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: 65px;
+    margin-bottom: 0;
+    font-family: 'CaviarDreams';
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+.h2-frase-vv {
+    background-color: #92aac7;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: 65px;
+    margin-bottom: 0;
+    font-family: 'CaviarDreams';
+    font-size: 20px;
+    letter-spacing: 2px;
+
 }
 
 .h3frases {
@@ -703,21 +727,30 @@ p {
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
+.frases-imagenes-redes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
 
 .frases-imagenes-redes--iconos {
     color: #3d495c;
     font-size: 20px;
     opacity: 60%;
+    margin-bottom: 30px;
 
     &:hover {
         opacity: 100%;
     }
 }
 
-.frases__imagen--sc {
-    @include sizes(250px, 250px);
+.frases__imagen{
+    width: 90%;
     margin-top: 40px;
-    border: #e78a87 3px solid;
     margin-bottom: 10px;
 
     &:hover {
@@ -725,32 +758,80 @@ p {
     }
 }
 
-.frases__imagen--sr {
-    @include sizes(250px, 250px);
-    margin-top: 40px;
-    margin-bottom: 10px;
-    border: #a1be95 3px solid;
 
+
+.frases__boton--sc {
+    font-family: 'Raleway', sans-serif;
+    color: #e78a87;
+    font-size: 12px;
+    @include sizes(100px, 30px);
+    border: solid 2px #e78a87;
+    margin-top: 0;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: bold;
     &:hover {
         transform: scale(1.01, 1.01);
     }
 }
-
-.frases__imagen--vv {
-    @include sizes(250px, 250px);
-    margin-top: 40px;
-    margin-bottom: 10px;
-    border: #92aac7 3px solid;
-
+.frases__boton--sr {
+    font-family: 'Raleway', sans-serif;
+    color: #a1be95;
+    font-size: 12px;
+    @include sizes(100px, 30px);
+    border: solid 2px #a1be95;
+    margin-top: 0;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: bold;
     &:hover {
         transform: scale(1.01, 1.01);
     }
 }
+.frases__boton--vv {
+    font-family: 'Raleway', sans-serif;
+    color: #92aac7;
+    font-size: 12px;
+    @include sizes(100px, 30px);
+    border: solid 2px #92aac7;
+    margin-top: 0;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    &:hover {
+        transform: scale(1.01, 1.01);
+    }
+}
+#frases-icono-flecha {
+    font-size: 70px;
+    color: #3d495c;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+
 
 /* Pagina de cada frase ser consciente*/
 
-.h2-frase-SC {
-    background-color: #e78a87;
+
+.contenedor-frase--imagen {
+    @include sizes(320px, 320px);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+
+/* Podcast*/
+
+#section-fondo {
+    background-color: #b9bac3;
+}
+.h2-frase-podcast {
+    background-color: #3d495c;
     text-align: center;
     padding: 10px;
     color: white;
@@ -762,54 +843,12 @@ p {
 
 }
 
-.frase-sc-imagen {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.contenedor-frase-sc--imagen {
-    @include sizes(320px, 320px);
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border: #e78a87 3px solid;
-
-}
-
-.frase-imagen-titulo {
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-decoration: none;
-}
-
-.frase-imagen--texto {
-    font-size: 20px;
-    margin: 10px;
-}
-
-.frase-firma-caro {
-    @include sizes(180px, 50px);
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-/* Podcast*/
-
-#section-fondo {
-    background-color: #b9bac3;
-}
-
 .contenedor-podcast {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
 }
 
@@ -1093,6 +1132,9 @@ footer {
         height: 600px;
     }
 
+    .carousel-caption {
+        background-image: url();
+    }
     #boton-slide {
         border: white solid 3px;
         @include sizes(100px, 40px);
@@ -1267,15 +1309,13 @@ footer {
 
     /* frases*/
 
-    .frases__imagen--sc,
-    .frases__imagen--sr,
-    .frases__imagen--vv {
-        @include sizes(300px, 300px);
+    .frases__imagen{
+        @include sizes(350px, 350px);
     }
 
     /* pagina de cada frase*/
 
-    .contenedor-frase-sc--imagen {
+    .contenedor-frase--imagen {
         @include sizes(500px, 500px);
 
     }
