@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Aquí podrás encontrar artículos con una visión expansiva de liderazgo, 
+        en relación a la consciencia y trascendencia, la responsabilidad y el vivir con valores.">
+    <meta name="keywords" content="consciencia, coaching, desarrollo, crecimiento personal, crecimiento profesional, emociones,
+        equipos, confort, mente, inteligencia intuitiva, intelifencia emocional, competencias, vulnerabilidad, liderazgo, diversidad, comunicación,
+        factor humano, focus">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="multimedia/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="multimedia/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="multimedia/favicon-16x16.png">
+    <link rel="manifest" href="multimedia/site.webmanifest">
+    <script src="https://kit.fontawesome.com/7a5f78019b.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Caro Montalto|Artículo|La delgada línea de la tolerancia</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img class="imagen-logo-nav" src="multimedia/logo1.png" width="200" height="40" alt="logo" loading="lazy">
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="link-nav" class="nav-link" href="biografia.html">Biografía</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a id="link-nav" class="nav-link dropdown-toggle" href="articulos.html" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Artículos
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                        <a id="item-drop1" class="dropdown-item" href="articulos-ser-conscientes.html">Ser
+                            Conscientes</a>
+                        <a id="item-drop2" class="dropdown-item" href="articulos-ser-responsables.html">Ser
+                            Responsables</a>
+                        <a id="item-drop3" class="dropdown-item" href="articulos-vivir-con-valores.html">Vivir con
+                            Valores</a>
+                    </div>
+                </li>
+                <!-- Dropdown 2-->
+                <li class="nav-item dropdown">
+                    <a id="link-nav" class="nav-link dropdown-toggle" href="articulos.html" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Frases
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                        <a id="item-drop1" class="dropdown-item" href="frases-ser-conscientes.html">Ser Conscientes</a>
+                        <a id="item-drop2" class="dropdown-item" href="frases-ser-responsables.html">Ser
+                            Responsables</a>
+                        <a id="item-drop3" class="dropdown-item" href="frases-vivir-con-valores.html">Vivir con
+                            Valores</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a id="link-nav" class="nav-link" href="podcast.html">Podcast</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Button to Open the Modal -->
+                    <button type="button" id="boton-modal-contacto" class="btn btn-outline-warning" data-toggle="modal"
+                        data-target="#myModal">
+                        Contacto
+                    </button></a>
+
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Contacto</h5>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="containerForm">
+                        <ul class="form">
+                            <li>
+                                <label for="nombre">Nombre:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="nombre">
+                            </li>
+                            <li>
+                                <label for="apellido">Apellido:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="apellido">
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                            </li>
+                            <li>
+                                <input type="email" name="email">
+                            </li>
+                            <li>
+                                <label for="message">Deja tu mensaje:</label>
+                            </li>
+                            <li>
+                                <textarea rows="3"></textarea>
+                            </li>
+                            <li>
+                                <input class="botonEnviar" type="submit" value="Enviar">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" id="boton-close-modal" class="btn btn-danger"
+                        data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <!--section-->
+        <section>
+            <a name="arriba"></a>
+            <h2 class="h2articulosSR">Ser Responsables</h2>
+            <div class="container-articulo">
+                <img class="container-articulo__imagen"
+                    src="https://media-exp1.licdn.com/dms/image/C4D12AQHTGXWwAk1tFQ/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=os1DEJP4OYR2jSdoDjQZQ6bZkslB5m1d2xMBc2kOTZ8"
+                    alt="imagen-articulo">
+                <h3 class="container-articulo__titulo"><strong>La delgada línea de la tolerancia</strong></h3>
+                <h6><strong>Compartir en:</strong></h6>
+                <div>
+                    <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A//magui-alonso.github.io/pagina-web-caro-montalto/articulo-sc-como-expandir-zona-de-confort.html">
+                        <iconify-icon class="container-articulo__icono" data-icon="ant-design:facebook-filled">
+                        </iconify-icon>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/shareArticle?mini=true&url=%22https%3A//twitter.com/intent/tweet?text=https%253A//magui-alonso.github.io/pagina-web-caro-montalto/articulo-sc-como-expandir-zona-de-confort.html%22&title=Como%20expandir%20tu%20zona%20de%20confort.&summary=&source=">
+                        <iconify-icon class="container-articulo__icono" data-icon="ant-design:linkedin-filled">
+                        </iconify-icon>
+                    </a>
+                    <a
+                        href="https://twitter.com/intent/tweet?text=https%3A//magui-alonso.github.io/pagina-web-caro-montalto/articulo-sc-como-expandir-zona-de-confort.html">
+                        <iconify-icon class="container-articulo__icono" data-icon="ant-design:twitter-square-filled">
+                        </iconify-icon>
+                    </a>
+                </div>
+                <div class="container-articulo__parrafo">
+                    <p>Hoy observo que la tolerancia se comprende de formas muy diversas, hay personas que dicen que es
+                        una capacidad para asimilar influencias nocivas sin presentar una reacción de rechazo, hay otros
+                        que van más allá diciendo que la tolerancia es la cualidad de coexistir con lo diferente sin
+                        tener prejuicios.</p>
+
+                    <p>En la actualidad, el encuentro con personas diferentes se hace ineludible e intenso, desafiando
+                        así los límites de la tolerancia que cada persona tenga. Los lugares públicos y comunes como
+                        comercios, restaurantes, transportes o las mismas calles de circulación se convierten en
+                        escenarios que muestran el nivel de aceptación y respeto hacia la diversidad. Es posible
+                        observar los retos de la convivencia, dejando entrever el grado de fortaleza de nuestras
+                        convicciones morales y cívicas.</p>
+
+                    <p><b>¿Qué es la tolerancia? </b>Según La Real Academia de la Lengua se define tolerancia como
+                        <b><i>“el respeto por los pensamientos y las acciones de terceros cuando resultan opuestos o
+                                distintos a los propios.” </i></b></p>
+
+                    <p>Esto implica respetar las ideas, creencias y prácticas de los demás. Al mismo tiempo, la
+                        tolerancia conlleva a reconocer las diferencias implícitas en los seres humanos, la diversidad
+                        cultural, étnica, religiosa… o los distintos comportamientos y actitudes.</p>
+
+                    <p><b>¿Cuáles son los tipos de tolerancia? </b>Es posible distinguir diferentes tipos de tolerancia
+                        y sus opuestos, el extremo intolerante:</p>
+                    <ul class="lista-en-articulos">
+                        <li>La tolerancia racial, respeto a otras razas; el racismo como intolerancia.</li>
+
+                        <li>La tolerancia étnica, respeto a individuos de otras culturas o pueblos; la xenofobia como su
+                            opuesto.</li>
+
+                        <li>La tolerancia religiosa, respeto a diferentes religiones o creencias; el imponer una única
+                            verdad marca su opuesto intolerante.</li>
+
+                        <li>La tolerancia ideológica, respeto a otros pensamientos, ideas o principios; las derechas o
+                            izquierdas extremas supondrían la intolerancia.</li>
+
+                        <li>La tolerancia sexual, respeto a individuos del sexo opuesto u otras orientaciones sexuales;
+                            el
+                            machismo o feminismo extremo, junto con la homofobia se enmarcan como intolerancia.</li>
+
+                        <li>La tolerancia social, respeto a distintas clases sociales; con el clasismo como contrario.
+                        </li>
+                    </ul>
+                    <p>Además de esta clasificación, es posible conocer una tolerancia negativa-pasiva y positiva-activa
+                        desde una perspectiva más psicológica. La <b>tolerancia negativa-pasiva</b> se puede dar de
+                        varias formas. Si nos remitimos a la propia etimología de la palabra tolerancia, del latín
+                        <i>tolerare</i> – aguantar, soportar -, podemos encontrar una mirada negativa. Con esto se
+                        refiere a la resistencia que se tiene para soportar algo con lo que una persona no está de
+                        acuerdo. Esta actitud implica una pasividad, al no tratar de comprender y aceptar como válidas
+                        otras posturas. </p>
+
+                    <p>Otras formas de tolerancia negativa y pasiva son el acto de ignorar, no prestar atención a lo
+                        ajeno y negar otros valores, o la resignación y la sumisión: al no poder cambiar aquello que no
+                        se comparte se acepta, pero sin intentar o querer comprenderlo.</p>
+
+                    <p class="texto-centrado"><b>“El factor clave entre la tolerancia negativa-pasiva y la
+                            positiva-activa está en la
+                            motivación que lleva a la acción de tolerar</b>”</p>
+
+                    <p>Si los motivos son evitar el conflicto o la impotencia al no ser capaz de cambiar una situación,
+                        la persona vive en un desinterés o miedo hacia su propio entorno. Por el contrario, si los
+                        motivos conllevan el conocer, comprender y promover la coexistencia pacífica, se ejercerá una
+                        <b>tolerancia positiva y activa</b>. Este tipo de tolerancia se basa en la predisposición al
+                        intercambio, el valor de igualdad donde ninguna de las partes se ve sometida, la prioridad de
+                        intereses comunes y en la libertad de expresar libremente las diferencias y contradicciones.</p>
+
+                    <p>Cuando el ser humano es tolerante porque cree que no puede hacer nada, está reflejando una suerte
+                        de desesperanza aprendida, se termina rindiendo ante la situación o la persona. Obviamente, en
+                        este caso la tolerancia adquiere matices negativos porque se visualiza a personas apáticas,
+                        desinteresadas y no comprometidas con la realidad.</p>
+
+                    <p>Lo que veo hoy en día es cómo la práctica y los límites de la tolerancia suponen un gran reto
+                        diario, además de plantear cuestiones de difícil solución. En busca de tales respuestas, el
+                        camino más accesible tal vez sea hacer la siguiente reflexión:</p>
+                    <ul class="lista-en-articulos">
+                        <li>¿De qué forma se hace uso de la tolerancia?</li>
+
+                        <li>¿Se tiende hacia una tolerancia negativa- pasiva ignorando o evadiendo conflictos?</li>
+
+                        <li>¿Se tiene el valor necesario para intentar entender lo opuesto a fin de aprender y
+                            evolucionar?
+                        </li>
+
+                        <li>¿Cuáles son los límites que se tienen?</li>
+
+                        <li>¿Da derecho la tolerancia a no tolerar a los intolerantes?</li>
+                    </ul>
+                    <p>Para concluir esta reflexión menciono la siguiente frase… <b><i>“Puesto que yo soy imperfecto y
+                                necesito la tolerancia y la bondad de los demás, también he de tolerar los defectos del
+                                mundo hasta que pueda encontrar el secreto para ponerles remedio” – Gandhi</i></b></p>
+
+                    <p>No obstante, para que la tolerancia sea un proceso positivo se deben presentar varios factores:
+                    </p>
+                    <ul class="lista-en-articulos">
+                        <li>La disposición a la concesión y a establecer una relación de intercambio</li>
+
+                        <li>El mantenimiento de una relación de equidad donde ambas concuerden en un poder que asegure
+                            la
+                            no sumisión</li>
+
+                        <li>El encuentro y la priorización de una serie de objetivos colaborativos o bien, intereses
+                            comunes</li>
+
+                        <li>La posibilidad de ejercer y demostrar libremente las contradicciones y las diferentes</li>
+                    </ul>
+                    <p><b><i>“Estos factores garantizan que tolerar no sea un acto de sumisión o una alternativa única,
+                                sino una decisión consciente”</i></b>. No obstante, cuando estos factores se manifiestan
+                        normalmente se presenta un contrasentido: las personas no desean ser tolerantes simplemente por
+                        miedo o porque son demasiado rígidas en sus patrones de comportamiento y de valoración del otro
+                        (pero éste ya sería otro tema de debate).</p>
+
+                    <p>Así, más allá de si se asume una tolerancia pasiva o positiva, lo que me pregunto es dónde está
+                        el límite de la tolerancia. En este sentido podría reflejar el pensamiento de la tolerancia como
+                        una suerte de zona de desarrollo próximo; es decir, un espacio que aún no se ha desarrollado
+                        pero que puede alcanzarse con la ayuda de otras personas. Esta zona de desarrollo próximo será
+                        más o menos estrecha en relación con los prejuicios, los hábitos, los estereotipos o las
+                        convicciones que posea cada persona y la rigidez o flexibilidad que demuestre para cambiar los
+                        mismos. Asumiendo la tolerancia como una zona compartida con otras personas y enmarcada en una
+                        situación específica es posible comprender que un comportamiento tolerante puede serlo <b>“aquí
+                            y ahora”</b> pero puede no manifestarse mañana porque las condiciones del entorno (o de la
+                        propia persona) han variado.</p>
+
+                    <p>El límite de la <b>tolerancia positiva</b> se establecerá en donde la persona no pueda ir un paso
+                        más allá debido a que su sistema de valores se lo impide, debido a que lo que considera que es
+                        <b>“bueno”</b> y <b>“correcto”</b> ya no se aplica al caso en cuestión.</p>
+
+                    <p>Para ir terminando este artículo sobre estas reflexiones/inflexiones de la tolerancia, quiero
+                        compartirte una frase de <b><i>Perls</i></b> que destaca la importancia de que las personas sean
+                        tolerantes preservando las diferencias individuales: </p>
+
+                    <p class="texto-centrado"><b><i>“Yo hago mis cosas y tú haces las tuyas. No estoy en este mundo para
+                                cumplir tus
+                                expectativas, ni tú estás para cumplir las mías. Tú eres Tú, y Yo soy Yo. Si por
+                                casualidad nos encontramos será hermoso. Si no, entonces no hay nada que hacer” -
+                                Perls</i></b></p>
+
+                    <p><b><i>Las personas necesitan animarse a buscar soluciones en conjunto, crear alternativas y
+                                nuevas maneras de abordar y gestionar los desafíos del mundo. La diversidad es la
+                                riqueza más grande en donde es posible encontrar su fuerza si las personas se
+                                unen.</i></b></p>
+
+                    <p class="texto-centrado"><b><i>“Porque pudiendo tanto nos atrevimos a tan poco” – Albert
+                                Camus</i></b></p>
+
+
+                    <div class="firma-articulos">
+                        <img class="firma-articulos__imagen" src="multimedia/firma-caro.png" alt="firma-caro">
+                    </div>
+                    <center><a href="articulos-ser-responsables.html"><input class="articulos__boton--volver"
+                                type="button" value="Volver a página anterior"></a></center>
+                </div>
+            </div>
+
+        </section>
+
+        <!--footer-->
+        <footer>
+
+            <div class="flechaArriba">
+                <a class="botonArriba" href="#arriba"><i class="fas fa-chevron-up fa-2x"></i></a>
+            </div>
+            <h5>Sigamos Conectados.</h5>
+            <ul class="linkApps">
+                <li>
+                    <a href="https://www.instagram.com/caromontalto/"><i class="fab fa-instagram-square fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/carolinamontalto/"><i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="spotify:show:53R9r9pmX4kcqh6r6RKcFM"><i class="fab fa-spotify fa-2x"></i></a>
+                </li>
+            </ul>
+            <h6 class="footer-texto">©2020-Caro Montalto-Terminos y Condiciones-Políticas de Privacidad</h6>
+            <h6 class="footer-texto">Diseñada y construida por M.A design.</h6>
+        </footer>
+    </div>
+
+
+
+
+
+    <!--no tocar css-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

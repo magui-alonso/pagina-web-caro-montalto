@@ -120,6 +120,10 @@ p {
   margin-top: 50px;
 }
 
+.carousel-control-prev {
+  margin-top: 50px;
+}
+
 #boton-slide {
   background-color: #f5f5f5;
   color: #262626;
@@ -131,12 +135,58 @@ p {
   padding-bottom: 0.2px;
   margin-top: 27px;
   margin-bottom: 5px;
+  -webkit-animation: yourAnimation 3s forwards 0s ease;
+          animation: yourAnimation 3s forwards 0s ease;
 }
 
 #boton-slide:hover {
   background-color: #e2dfa2;
   color: #212832;
   border: 2px solid #f5f5f5;
+}
+
+@-webkit-keyframes yourAnimation {
+  0% {
+    -webkit-transform: rotate(0) translateY(-20%);
+            transform: rotate(0) translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0);
+            transform: rotate(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes yourAnimation {
+  0% {
+    -webkit-transform: rotate(0) translateY(-20%);
+            transform: rotate(0) translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0);
+            transform: rotate(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+.titulo-slide {
+  -webkit-animation: yourAnimation 3s forwards 0s ease;
+          animation: yourAnimation 3s forwards 0s ease;
+}
+
+@keyframes yourAnimation {
+  0% {
+    -webkit-transform: rotate(0) translateY(-20%);
+            transform: rotate(0) translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateX(0);
+            transform: rotate(0) translateX(0);
+    opacity: 1;
+  }
 }
 
 .frasePrincipal {
@@ -633,6 +683,7 @@ p {
 
 .texto-centrado {
   text-align: center;
+  padding-left: 10px;
 }
 
 .sangria {
@@ -1024,6 +1075,19 @@ p {
   width: 90%;
 }
 
+@keyframes yourAnimation {
+  0% {
+    -webkit-transform: rotate(0) translateY(-10%);
+            transform: rotate(0) translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(0);
+            transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+}
+
 .podcast-imagen {
   width: 150px;
   height: 150px;
@@ -1317,8 +1381,12 @@ footer h5 {
     border: white solid 3px;
     height: 40px;
     width: 100px;
-    margin-bottom: 20px;
-    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+  .titulo-slide {
+    font-size: 80px;
+    padding-bottom: 100px;
   }
   .frasePrincipal p {
     font-size: 25px;
@@ -1397,10 +1465,6 @@ footer h5 {
     border: solid 2px #212832;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-  .titulo-slide {
-    font-size: 80px;
-    padding-bottom: 100px;
   }
   /* biografia*/
   .parrafoacercaDeMi {
@@ -1581,12 +1645,6 @@ footer h5 {
   }
   #boton-slide {
     margin-bottom: 5px;
-    margin-top: 50px;
-  }
-  .carousel-control-prev {
-    margin-top: 50px;
-  }
-  .carousel-control-next {
     margin-top: 50px;
   }
   .titulo-slide {

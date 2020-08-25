@@ -67,8 +67,6 @@ p {
 
 .navbar {
     background-image: linear-gradient(#212832, #212832, #212832);
-
-
 }
 
 .imagen-logo-nav:hover {
@@ -124,6 +122,9 @@ p {
 .carousel-control-next {
     margin-top: 50px;
 }
+.carousel-control-prev {
+    margin-top: 50px;
+}
 
 #boton-slide {
     background-color: #f5f5f5;
@@ -136,6 +137,7 @@ p {
     padding-bottom: 0.2px;
     margin-top: 27px;
     margin-bottom: 5px;
+    animation: yourAnimation 3s forwards 0s ease;
 
     &:hover {
         background-color: #e2dfa2;
@@ -143,6 +145,33 @@ p {
         border: 2px solid #f5f5f5;
     }
 }
+
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-20%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateX(0);
+        opacity: 1;
+        }
+}
+.titulo-slide {
+    animation: yourAnimation 3s forwards 0s ease;
+
+}
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-20%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateX(0);
+        opacity: 1;
+        }
+}
+
 
 .frasePrincipal {
     display: flex;
@@ -524,6 +553,8 @@ p {
 
 .texto-centrado {
     text-align: center;
+    padding-left: 10px;
+    
 }
 
 .sangria {
@@ -863,7 +894,18 @@ p {
     margin-top: 30px;
     box-shadow: #645C54 15px 5px 15px;
     width: 90%;
+    
 
+}
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-10%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
 }
 
 .podcast-imagen {
@@ -1138,9 +1180,18 @@ footer {
     #boton-slide {
         border: white solid 3px;
         @include sizes(100px, 40px);
-        margin-bottom: 20px;
-        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+        
     }
+    
+    .titulo-slide {
+        font-size: 80px;
+        padding-bottom: 100px;
+       
+
+    }
+    
 
     .frasePrincipal p {
         font-size: 25px;
@@ -1200,11 +1251,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .titulo-slide {
-        font-size: 80px;
-        padding-bottom: 100px;
-    }
-
+    
     /* biografia*/
 
     .parrafoacercaDeMi {
@@ -1311,7 +1358,9 @@ footer {
 
     .frases__imagen{
         @include sizes(350px, 350px);
+        
     }
+    
 
     /* pagina de cada frase*/
 
@@ -1393,18 +1442,14 @@ footer {
     #boton-slide {
         margin-bottom: 5px;
         margin-top: 50px;
+       
     }
-
-    .carousel-control-prev {
-        margin-top: 50px;
-    }
-
-    .carousel-control-next {
-        margin-top: 50px;
-    }
+    
 
     .titulo-slide {
         font-size: 35px;
+        
 
     }
+    
 }

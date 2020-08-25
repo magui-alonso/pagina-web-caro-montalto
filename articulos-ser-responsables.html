@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
     <!-- Brand -->
     <a class="navbar-brand" href="index.html">
@@ -75,60 +75,59 @@
       </ul>
     </div>
   </nav>
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h5 class="modal-title">Contacto</h5>
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title">Contacto</h5>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="containerForm">
+            <ul class="form">
+              <li>
+                <label for="nombre">Nombre:</label>
+              </li>
+              <li>
+                <input type="text" name="nombre">
+              </li>
+              <li>
+                <label for="apellido">Apellido:</label>
+              </li>
+              <li>
+                <input type="text" name="apellido">
+              </li>
+              <li>
+                <label for="email">Email:</label>
+              </li>
+              <li>
+                <input type="email" name="email">
+              </li>
+              <li>
+                <label for="message">Deja tu mensaje:</label>
+              </li>
+              <li>
+                <textarea rows="3"></textarea>
+              </li>
+              <li>
+                <input class="botonEnviar" type="submit" value="Enviar">
+              </li>
+            </ul>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" id="boton-close-modal" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+
       </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <form class="containerForm">
-          <ul class="form">
-            <li>
-              <label for="nombre">Nombre:</label>
-            </li>
-            <li>
-              <input type="text" name="nombre">
-            </li>
-            <li>
-              <label for="apellido">Apellido:</label>
-            </li>
-            <li>
-              <input type="text" name="apellido">
-            </li>
-            <li>
-              <label for="email">Email:</label>
-            </li>
-            <li>
-              <input type="email" name="email">
-            </li>
-            <li>
-              <label for="message">Deja tu mensaje:</label>
-            </li>
-            <li>
-              <textarea rows="3"></textarea>
-            </li>
-            <li>
-              <input class="botonEnviar" type="submit" value="Enviar">
-            </li>
-          </ul>
-        </form>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" id="boton-close-modal" class="btn btn-danger"
-          data-dismiss="modal">Cerrar</button>
-      </div>
-
     </div>
   </div>
-</div>
 
   <div class="grid">
     <!--section-->
@@ -137,72 +136,130 @@
       <h2 class="h2articulosSR">Artículos</h2>
       <h3 class="h3serResponsables">Ser Responsables</h3>
       <div class="bordeH3SR"></div>
-      
+
       <div class="contenedor-articulos">
+
         <div class="section-blog-contenido--articulo">
-          <img class="section-blog-contenido--imagen" src="multimedia/articulos/art-1-sc.jpg" alt="imagen-articulo">
+          <img class="section-blog-contenido--imagen"
+            src="https://media-exp1.licdn.com/dms/image/C4D12AQHApy7ij7pXoQ/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=zy5fwRmHsmfrbO0Twl1lwazK_7xoLKZzLeZLLfYbNmg"
+            alt="imagen-articulo">
           <div class="section-blog-contenido--texto">
-            <h6 class="blog-articulo-redes--fecha">16-08-2020</h6>
-            
-              <h4 class="blog-articulo-titulo">El cuidado personal no es un lujo, sino una necesidad</h4>
-            
-            <p class="blog-articulo-texto">Frente a tanta ansiedad e incertidumbre generada en el mundo, para mi está
-              siendo cada vez más
-              claro que las personas que trabajan juntas con amabilidad, compasión y aceptación son las piezas
-              que faltan para restablecer el bienestar de nuestra humanidad totalmente separada y dividida.
-              Algo que me resulta obvio, es que no podemos crear soluciones desde el mismo nivel de conciencia
-              en el que estábamos hace un par de meses atrás. Por el contrario, siento que cada uno de
-              nosotros puede asumir la responsabilidad de elevar su propia conciencia para ayudar a encontrar
-              soluciones diferentes y pacíficas...
+
+            <h4 class="blog-articulo-titulo">¿Se tiene consciencia de la exposición cotidiana al trabajo?</h4>
+
+            <p class="blog-articulo-texto">Cuando el foco de crecimiento es la consciencia, es posible preguntarnos:<b>
+                ¿Cuán conscientes estamos
+                cuando nos enfrentamos a una situación concreta en nuestro trabajo cotidiano? </b>Para visualizarlo
+              necesitamos una evaluación de tres dimensiones propuestas en una misma situación: la tarea en sí, el
+              equipo o las relaciones que interactúan para resolverlo y la persona en sí, como actor decisivo dentro
+              de la situación; esto podría ofrecer un panorama más amplio sobre cómo podríamos actuar...
             </p>
-            <a href="sr-1.html"><input class="articulos__boton" type="button"
+            <a href="sr-1-exposición-al-trabajo.html"><input class="articulos__boton" type="button"
                 value="Leer más >"></a>
 
           </div>
         </div>
         <div class="section-blog-contenido--articulo">
-          <img class="section-blog-contenido--imagen" src="multimedia/articulos/art-1-sc.jpg" alt="imagen-articulo">
+          <img class="section-blog-contenido--imagen"
+            src="https://media-exp1.licdn.com/dms/image/C4D12AQG4Zx63oPSV7g/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=WZKovpph1WwjD2HOVY8jRI1PjaRHTWqSamHHPybL_0w"
+            alt="imagen-articulo">
           <div class="section-blog-contenido--texto">
-            <h6 class="blog-articulo-redes--fecha">16-08-2020</h6>
-            
-              <h4 class="blog-articulo-titulo">El cuidado personal no es un lujo, sino una necesidad</h4>
-            
-            <p class="blog-articulo-texto">Frente a tanta ansiedad e incertidumbre generada en el mundo, para mi está
-              siendo cada vez más
-              claro que las personas que trabajan juntas con amabilidad, compasión y aceptación son las piezas
-              que faltan para restablecer el bienestar de nuestra humanidad totalmente separada y dividida.
-              Algo que me resulta obvio, es que no podemos crear soluciones desde el mismo nivel de conciencia
-              en el que estábamos hace un par de meses atrás. Por el contrario, siento que cada uno de
-              nosotros puede asumir la responsabilidad de elevar su propia conciencia para ayudar a encontrar
-              soluciones diferentes y pacíficas...
+            <h4 class="blog-articulo-titulo">¿Cómo gestionar la Inteligencia Emocional en contextos cambiantes?</h4>
+
+            <p class="blog-articulo-texto">
+              Inicio este artículo con la siguiente interrogante: <b>¿Que hace difícil a algunas personas el avanzar en
+                la Inteligencia Emocional? </b>¿, diría que la respuesta viene ligada a los escenarios de crianza
+              específicos, la poca información y formación en la educación primaria y secundaria en estas habilidades
+              blandas, sumado a que cuando de resultados en las organizaciones se trata, se permite poco espacio para el
+              desarrollo del liderazgo y la conexión con las emociones y finalmente a que las personas en los contextos
+              de compañías, tienen y dedican poco espacio a avanzar en su autoconocimiento mediante oportunos espacios
+              de coevaluación y retroalimentación que permita la ampliación de consciencia y el plan de acción
+              oportuno...
             </p>
-            <a href="articulo-sc-como-expandir-zona-de-confort.html"><input class="articulos__boton" type="button"
+            <a href="sr-2-inteligencia-emocional.html"><input class="articulos__boton" type="button"
                 value="Leer más >"></a>
 
           </div>
         </div>
         <div class="section-blog-contenido--articulo">
-          <img class="section-blog-contenido--imagen" src="multimedia/articulos/art-1-sc.jpg" alt="imagen-articulo">
+          <img class="section-blog-contenido--imagen"
+            src="https://media-exp1.licdn.com/dms/image/C4D12AQHtTF3O2rnVSQ/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=8tFbB9jQxJblp2f4Phokzrh9TdMFqWo_7NNmMtUp4xk">
           <div class="section-blog-contenido--texto">
-            <h6 class="blog-articulo-redes--fecha">16-08-2020</h6>
-            
-              <h4 class="blog-articulo-titulo">El cuidado personal no es un lujo, sino una necesidad</h4>
-            
-            <p class="blog-articulo-texto">Frente a tanta ansiedad e incertidumbre generada en el mundo, para mi está
-              siendo cada vez más
-              claro que las personas que trabajan juntas con amabilidad, compasión y aceptación son las piezas
-              que faltan para restablecer el bienestar de nuestra humanidad totalmente separada y dividida.
-              Algo que me resulta obvio, es que no podemos crear soluciones desde el mismo nivel de conciencia
-              en el que estábamos hace un par de meses atrás. Por el contrario, siento que cada uno de
-              nosotros puede asumir la responsabilidad de elevar su propia conciencia para ayudar a encontrar
-              soluciones diferentes y pacíficas...
+
+            <h4 class="blog-articulo-titulo">¿Qué hace difícil a algunas personas avanzar en Inteligencia Emocional?
+            </h4>
+
+            <p class="blog-articulo-texto">Por muchos años la educación ha estado centrada en educar la mente, la razón.
+              De hecho, Hace algunas
+              décadas atrás solo se tomaba como referencia el cociente o coeficiente intelectual (CI) de una persona
+              para pronosticar su éxito. A su vez, esta especie de boom del <b>Coeficiente Intelectual</b> llevaba
+              consigo el auge de las pruebas de inteligencia, aplicado en escuelas, como proceso de admisión y en
+              numerosas ocasiones como una prueba más en el proceso de selección para un puesto de trabajo...
             </p>
-            <a href="articulo-sc-como-expandir-zona-de-confort.html"><input class="articulos__boton" type="button"
+            <a href="sr-3-avanzar-en-inteligencia-emocional.html"><input class="articulos__boton" type="button"
                 value="Leer más >"></a>
 
           </div>
         </div>
-    </div>
+        <div class="section-blog-contenido--articulo">
+          <img class="section-blog-contenido--imagen"
+            src="https://media-exp1.licdn.com/dms/image/C4D12AQHTGXWwAk1tFQ/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=os1DEJP4OYR2jSdoDjQZQ6bZkslB5m1d2xMBc2kOTZ8">
+          <div class="section-blog-contenido--texto">
+
+            <h4 class="blog-articulo-titulo">La delgada línea de la tolerancia
+            </h4>
+
+            <p class="blog-articulo-texto">Hoy observo que la tolerancia se comprende de formas muy diversas, hay
+              personas que dicen que es una capacidad para asimilar influencias nocivas sin presentar una reacción de
+              rechazo, hay otros que van más allá diciendo que la tolerancia es la cualidad de coexistir con lo
+              diferente sin tener prejuicios...
+            </p>
+            <a href="sr-4-linea-de-tolerancia.html"><input class="articulos__boton" type="button"
+                value="Leer más >"></a>
+
+          </div>
+        </div>
+        <div class="section-blog-contenido--articulo">
+          <img class="section-blog-contenido--imagen"
+            src="https://media-exp1.licdn.com/dms/image/C4D12AQHg1U0nn64QUw/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=vCVlDGljTVP11SZC844GSG2GXSYb3sxnD90Ap15Zg7c">
+          <div class="section-blog-contenido--texto">
+
+            <h4 class="blog-articulo-titulo">¿Cuál es el valor añadido que brinda la Inteligencia Emocional a las
+              organizaciones?
+            </h4>
+
+            <p class="blog-articulo-texto">Una frecuente indagación sobre la Inteligencia Emocional que observo esta
+              soportado sobre su real
+              aporte al mundo corporativo. Para empezar a darte respuesta a ello, considero importante citar a
+              uno de los autores que ha llevado el impacto de la competencia a las organizaciones desde el año
+              1999 cuando escribió el libro; <em><b>La Inteligencia emocional en la empresa.</b></em>
+              <a href="#_edn1"><b><i><b>[i]</b></i></b></a>...
+            </p>
+            <a href="sr-5-valor-inteligencia-emocional.html"><input class="articulos__boton" type="button"
+                value="Leer más >"></a>
+
+          </div>
+        </div>
+        <div class="section-blog-contenido--articulo">
+          <img class="section-blog-contenido--imagen"
+            src="https://media-exp1.licdn.com/dms/image/C4E12AQHXUkFqoub-2Q/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=9BPz5c6_bfsEjIBZu85n2ApGqDis2qLeiWfdyrDYhJ8">
+          <div class="section-blog-contenido--texto">
+
+            <h4 class="blog-articulo-titulo">¿Comprender o Tolerar?
+            </h4>
+
+            <p class="blog-articulo-texto">El diccionario dice que la tolerancia es: condescendencia, benevolencia,
+              llevar con paciencia, disimular lo que no es lícito, aceptar lo que me repugna . Dando a entender que se
+              tolera lo que no está bien, se tolera al que no es igual y en consecuencia se tolera la diferencia...
+            </p>
+            <a href="sr-6-comprender-o-tolerar.html"><input class="articulos__boton" type="button"
+                value="Leer más >"></a>
+
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
     <!--footer-->
