@@ -88,7 +88,11 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          <form class="containerForm">
+          <form form action="https://formsubmit.co/magui.alonso.g@gmail.com" method="POST" class="containerForm">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html" />
+            <input type="hidden" name="_subject" value="Nuevo mensaje, Caro Montalto Web!" />
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
             <ul class="form">
               <li>
                 <label for="nombre">Nombre:</label>
@@ -112,7 +116,7 @@
                 <label for="message">Deja tu mensaje:</label>
               </li>
               <li>
-                <textarea rows="3"></textarea>
+                <textarea name="message" rows="4" required></textarea>
               </li>
               <li>
                 <input class="botonEnviar" type="submit" value="Enviar">
@@ -120,6 +124,7 @@
             </ul>
           </form>
         </div>
+
 
         <!-- Modal footer -->
         <div class="modal-footer">

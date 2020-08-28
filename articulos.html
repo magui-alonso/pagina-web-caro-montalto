@@ -88,39 +88,44 @@
                 </div>
 
                 <!-- Modal body -->
-                <div class="modal-body">
-                    <form class="containerForm">
-                        <ul class="form">
-                            <li>
-                                <label for="nombre">Nombre:</label>
-                            </li>
-                            <li>
-                                <input type="text" name="nombre">
-                            </li>
-                            <li>
-                                <label for="apellido">Apellido:</label>
-                            </li>
-                            <li>
-                                <input type="text" name="apellido">
-                            </li>
-                            <li>
-                                <label for="email">Email:</label>
-                            </li>
-                            <li>
-                                <input type="email" name="email">
-                            </li>
-                            <li>
-                                <label for="message">Deja tu mensaje:</label>
-                            </li>
-                            <li>
-                                <textarea rows="3"></textarea>
-                            </li>
-                            <li>
-                                <input class="botonEnviar" type="submit" value="Enviar">
-                            </li>
-                        </ul>
-                    </form>
-                </div>
+        <div class="modal-body">
+            <form form action="https://formsubmit.co/magui.alonso.g@gmail.com" method="POST" class="containerForm">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html" />
+              <input type="hidden" name="_subject" value="Nuevo mensaje, Caro Montalto Web!" />
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
+              <ul class="form">
+                <li>
+                  <label for="nombre">Nombre:</label>
+                </li>
+                <li>
+                  <input type="text" name="nombre">
+                </li>
+                <li>
+                  <label for="apellido">Apellido:</label>
+                </li>
+                <li>
+                  <input type="text" name="apellido">
+                </li>
+                <li>
+                  <label for="email">Email:</label>
+                </li>
+                <li>
+                  <input type="email" name="email">
+                </li>
+                <li>
+                  <label for="message">Deja tu mensaje:</label>
+                </li>
+                <li>
+                  <textarea name="message" rows="4" required></textarea>
+                </li>
+                <li>
+                  <input class="botonEnviar" type="submit" value="Enviar">
+                </li>
+              </ul>
+            </form>
+          </div>
+  
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
