@@ -9,10 +9,6 @@
   src: url(fuentes/Allura-Regular.ttf);
 }
 
-.body-background {
-  background-color: black;
-}
-
 /* grid1= index/biografia/contacto*/
 .grid {
   display: -ms-grid;
@@ -172,6 +168,8 @@ p {
 }
 
 .titulo-slide {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
   -webkit-animation: yourAnimation 3s forwards 0s ease;
           animation: yourAnimation 3s forwards 0s ease;
 }
@@ -444,7 +442,7 @@ p {
 }
 
 /* Articulos = Ser Conscientes*/
-.h2articulosSC {
+.h2-SC {
   background-color: #e78a87;
   text-align: center;
   padding: 10px;
@@ -456,7 +454,7 @@ p {
   letter-spacing: 2px;
 }
 
-.h3serConscientes {
+.h3-titulo {
   text-align: center;
   padding: 10px;
   color: #262626;
@@ -470,8 +468,7 @@ p {
 
 .bordeH3SC {
   border-bottom: #e78a87 2px solid;
-  margin-left: 70px;
-  margin-right: 70px;
+  width: 90%;
 }
 
 .contenedor-articulos {
@@ -758,7 +755,7 @@ p {
 }
 
 /* Articulos = Ser Responsables*/
-.h2articulosSR {
+.h2-SR {
   background-color: #a1be95;
   text-align: center;
   padding: 10px;
@@ -770,26 +767,13 @@ p {
   letter-spacing: 2px;
 }
 
-.h3serResponsables {
-  text-align: center;
-  padding: 10px;
-  color: #262626;
-  margin-top: 10px;
-  font-family: 'CaviarDreams';
-  font-size: 30px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 .bordeH3SR {
   border-bottom: #a1be95 2px solid;
-  margin-left: 70px;
-  margin-right: 70px;
+  width: 90%;
 }
 
 /* Articulos = Vivir con Valores*/
-.h2articulosVV {
+.h2-VV {
   background-color: #92aac7;
   text-align: center;
   padding: 10px;
@@ -801,26 +785,13 @@ p {
   letter-spacing: 2px;
 }
 
-.h3serVivirConValores {
-  text-align: center;
-  padding: 10px;
-  color: #262626;
-  margin-top: 10px;
-  font-family: 'CaviarDreams';
-  font-size: 30px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 .bordeH3VV {
   border-bottom: #92aac7 2px solid;
-  margin-left: 70px;
-  margin-right: 70px;
+  width: 90%;
 }
 
 /* Frases*/
-.h2-frase-sc {
+.h2-SC {
   background-color: #e78a87;
   text-align: center;
   padding: 10px;
@@ -830,60 +801,6 @@ p {
   font-family: 'CaviarDreams';
   font-size: 20px;
   letter-spacing: 2px;
-}
-
-.h2-frase-sr {
-  background-color: #a1be95;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  margin-top: 65px;
-  margin-bottom: 0;
-  font-family: 'CaviarDreams';
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-.h2-frase-vv {
-  background-color: #92aac7;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  margin-top: 65px;
-  margin-bottom: 0;
-  font-family: 'CaviarDreams';
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-.h3frases {
-  text-align: center;
-  padding: 10px;
-  color: #212832;
-  margin-top: 10px;
-  font-family: 'CaviarDreams';
-  font-size: 30px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.bordefrasesSC {
-  border-bottom: #e78a87 3px solid;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.bordefrasesSR {
-  border-bottom: #a1be95 3px solid;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.bordefrasesVV {
-  border-bottom: #92aac7 3px solid;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .frases {
@@ -1023,7 +940,7 @@ p {
   background-color: #b9bac3;
 }
 
-.h2-frase-podcast {
+.h2-podcast {
   background-color: #3d495c;
   text-align: center;
   padding: 10px;
@@ -1368,14 +1285,57 @@ footer h5 {
   scroll-padding-right: 3px;
 }
 
+/* pagina gracias formulario*/
+.contenedor-gracias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../multimedia/4685.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-image: fixed;
+  height: 65vh;
+  width: 100%;
+  margin-top: 65px;
+}
+
+.texto-gracias-h4 {
+  font-family: 'CaviarDreams';
+  color: #393d46;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.texto-gracias-h5 {
+  font-family: 'CaviarDreams';
+  color: #3d495c;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.firma-gracias {
+  width: 150px;
+  height: 37px;
+}
+
 /* MEDIA QUERY*/
 @media only screen and (min-width: 769px) {
   /* index*/
   .carousel-inner .carousel-item img {
     height: 600px;
-  }
-  .carousel-caption {
-    background-image: url();
   }
   #boton-slide {
     border: white solid 3px;
@@ -1634,10 +1594,26 @@ footer h5 {
   .linkApps {
     font-size: 15px;
   }
+  .contenedor-gracias {
+    height: 85vh;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .texto-gracias-h4 {
+    font-size: 40px;
+    margin-top: 180px;
+  }
+  .texto-gracias-h5 {
+    font-size: 40px;
+  }
+  .firma-gracias {
+    width: 250px;
+    height: 63px;
+  }
 }
 
 /* MEDIA QUERY*/
-@media (min-width: 400px) and (max-width: 760px) {
+@media (min-width: 400px) and (max-width: 768px) {
   /* podcast*/
   .carousel-inner .carousel-item img {
     margin-top: 65px;
@@ -1648,6 +1624,25 @@ footer h5 {
     margin-top: 50px;
   }
   .titulo-slide {
+    font-size: 35px;
+  }
+  .firma-gracias {
+    width: 250px;
+    height: 63px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 769px) {
+  .contenedor-gracias {
+    height: 80vh;
+    width: 100%;
+    margin-top: 65px;
+  }
+  .texto-gracias-h4 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .texto-gracias-h5 {
     font-size: 35px;
   }
 }

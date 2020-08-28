@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Aquí podrás encontrar artículos con una visión expansiva de liderazgo, 
+        en relación a la consciencia y trascendencia, la responsabilidad y el vivir con valores.">
+    <meta name="keywords" content="consciencia, coaching, desarrollo, crecimiento personal, crecimiento profesional, emociones,
+        equipos, confort, mente, inteligencia intuitiva, intelifencia emocional, competencias, vulnerabilidad, liderazgo, diversidad, comunicación,
+        factor humano, focus">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="multimedia/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="multimedia/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="multimedia/favicon-16x16.png">
+    <link rel="manifest" href="multimedia/site.webmanifest">
+    <script src="https://kit.fontawesome.com/7a5f78019b.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Caro Montalto|Artículo|¿Cómo expandir tu zona de confort?</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img class="imagen-logo-nav" src="multimedia/logo1.png" width="200" height="40" alt="logo" loading="lazy">
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="link-nav" class="nav-link" href="biografia.html">Biografía</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a id="link-nav" class="nav-link dropdown-toggle" href="articulos.html" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Artículos
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                        <a id="item-drop1" class="dropdown-item" href="articulos-ser-conscientes.html">Ser
+                            Conscientes</a>
+                        <a id="item-drop2" class="dropdown-item" href="articulos-ser-responsables.html">Ser
+                            Responsables</a>
+                        <a id="item-drop3" class="dropdown-item" href="articulos-vivir-con-valores.html">Vivir con
+                            Valores</a>
+                    </div>
+                </li>
+                <!-- Dropdown 2-->
+                <li class="nav-item dropdown">
+                    <a id="link-nav" class="nav-link dropdown-toggle" href="articulos.html" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Frases
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                        <a id="item-drop1" class="dropdown-item" href="frases-ser-conscientes.html">Ser Conscientes</a>
+                        <a id="item-drop2" class="dropdown-item" href="frases-ser-responsables.html">Ser
+                            Responsables</a>
+                        <a id="item-drop3" class="dropdown-item" href="frases-vivir-con-valores.html">Vivir con
+                            Valores</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a id="link-nav" class="nav-link" href="podcast.html">Podcast</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Button to Open the Modal -->
+                    <button type="button" id="boton-modal-contacto" class="btn btn-outline-warning" data-toggle="modal"
+                        data-target="#myModal">
+                        Contacto
+                    </button></a>
+
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Contacto</h5>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="containerForm">
+                        <ul class="form">
+                            <li>
+                                <label for="nombre">Nombre:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="nombre">
+                            </li>
+                            <li>
+                                <label for="apellido">Apellido:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="apellido">
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                            </li>
+                            <li>
+                                <input type="email" name="email">
+                            </li>
+                            <li>
+                                <label for="message">Deja tu mensaje:</label>
+                            </li>
+                            <li>
+                                <textarea rows="3"></textarea>
+                            </li>
+                            <li>
+                                <input class="botonEnviar" type="submit" value="Enviar">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" id="boton-close-modal" class="btn btn-danger"
+                        data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <!--section-->
+        <section>
+            <a name="arriba"></a>
+            <h2 class="h2-SR">Ser Responsables</h2>
+            <div class="container-articulo">
+                <img class="container-articulo__imagen"
+                    src="https://media-exp1.licdn.com/dms/image/C4D12AQHZnBtLMGN3NA/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=hLPnswaBXmBWCNZ-mCauv2-PpFqCUTnuBzO1IZnd2ho"
+                    alt="imagen-articulo">
+                <h3 class="container-articulo__titulo"><strong>¡Quién se enoja… pierde!</strong></h3>
+                <h6><strong>Compartir en:</strong></h6>
+                <div>
+                    <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A//magui-alonso.github.io/pagina-web-caro-montalto/articulo-sc-como-expandir-zona-de-confort.html">
+                        <iconify-icon class="container-articulo__icono" data-icon="ant-design:facebook-filled">
+                        </iconify-icon>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/shareArticle?mini=true&url=%22https%3A//twitter.com/intent/tweet?text=https%253A//magui-alonso.github.io/pagina-web-caro-montalto/articulo-sc-como-expandir-zona-de-confort.html%22&title=Como%20expandir%20tu%20zona%20de%20confort.&summary=&source=">
+                        <iconify-icon class="container-articulo__icono" data-icon="ant-design:linkedin-filled">
+                        </iconify-icon>
+                    </a>
+                    <a
+                        href="https://twitter.com/intent/tweet?text=https%3A//magui-alonso.github.io/pagina-web-caro-montalto/articulo-sc-como-expandir-zona-de-confort.html">
+                        <iconify-icon class="container-articulo__icono" data-icon="ant-design:twitter-square-filled">
+                        </iconify-icon>
+                    </a>
+                </div>
+                <div class="container-articulo__parrafo">
+                    <p>Años atrás decíamos con un grupo de amigas <b>"El que se enoja pierde"</b>,no recuerdo de donde
+                        salió o porque estaba esa frase entre nosotras, pero la decíamos frecuentemente. Quedó tan
+                        grabada en mi memoria, que ante cualquier sensación de enojo la recordaba de forma instantánea.
+                    </p>
+
+                    <p>Esta semana viví varias situaciones en donde sentí enojo, pero hubo un hecho en particular que
+                        trajo esta frase nuevamente a mi cabeza, pero no de la forma habitual, sino que vino en forma de
+                        pregunta.</p>
+
+                    <p>No me costó mucho descubrir que fue lo que hizo que repreguntara una frase, solo bastó con que se
+                        tocara la palabra "valores", en ese instante mi cabeza se paralizó por completo.</p>
+
+                    <p><b><i>[De acuerdo a lo que dice Fred Kofman en su libro Metamanagement; el enojo es una
+                                combinación de tristeza o miedo y el juicio de que quien ha generado esa tristeza hizo
+                                algo que no debía haber hecho, transgrediendo o violando ciertos límites significativos
+                                para uno].</i></b></p>
+
+                    <p>Tomando este concepto, antes hubiese pensado "Perdí todo un día enojada o triste por esto"; hoy,
+                        domingo 13 de noviembre del 2016, digo: <b><i>"Gané todo un día de aprendizaje".</i></b></p>
+
+                    <p>Es increíble cómo podemos aprovechar el enojo o enfado como oportunidad de aprendizaje. porque
+                        podemos restablecer nuestra integridad personal y nuestros límites con el sólo hecho de declarar
+                        nuestro enojo de una manera honorable. Para esto es fundamental el tener claro que valores
+                        queremos vivir y así poder defenderlos. El defender nuestros valores es lo que más nos lleva a
+                        sentir Paz interior y confianza en nosotros mismos.</p>
+
+                    <p><b><i>[Descubrir la Paz y la fuerza incondicional que surgen naturalmente, al aceptar que uno
+                                está definido por sus acciones y no por las acciones de los demás. Comprender
+                                compasivamente que, finalmente, toda persona hace lo mejor que puede (dentro de sus
+                                limitaciones y de sus modelos mentales), Fred Kofman].</i></b></p>
+
+                    <p>Después de leer esto me surgió la siguiente pregunta... <b>¿Y qué hago con las personas con las
+                            cuales pensamos u opinamos distinto?</b>, Ya sé!, mi cabeza que piensa más rápido me trae
+                        estas teorías tan fáciles de leer y tan difíciles de aplicar; el problema no está en tener
+                        opiniones diferentes, el conflicto emerge porque, en lugar de valorar esas diferencias y saber
+                        cómo aprovecharlas, las vemos como una potencial amenaza a nuestra identidad y autoestima.</p>
+
+                    <p>Si esto es así, entonces... <b><i>¿Como aprovecho las diferencias que existen con otros?</i></b>
+                    </p>
+
+                    <p>Recordando primeramente que podemos acercarnos a otro aun cuando opine distinto, sin la intención
+                        de manipularlo y moldearlo para que cambie y se adapte a mi manera de entender el mundo.</p>
+
+                    <p><b><i>¿Y que sería acercarme al otro sin ninguna intención de manipularlo, sino de
+                                comprenderlo?</i></b></p>
+
+                    <p>Carl Rogers lo explica así: Una de las emociones más satisfactorias que conozco procede de
+                        valorar a las personas de la misma forma en la que puedo valorar un atardecer. Las personas
+                        pueden ser tan maravillosas como el más bello atardecer, si me permito que lo sean. De hecho es
+                        muy posible que el motivo por el que apreciamos tanto los atardeceres sea que no podemos
+                        controlarlos. Cuando contemplo un atardecer, no le digo: atenúa un poco ese naranja de la
+                        esquina derecha, pon un poco de violeta por debajo y un poco más de rosa a las nubes. No hago
+                        nada semejante. No intento controlar el atardecer. Contemplo su despliegue con pura admiración.
+                    </p>
+
+                    <p>Pero hay momentos donde, además de escuchar y valorar nuestras diferencias de opinión con otros,
+                        necesitamos llegar a un acuerdo.</p>
+
+                    <p><b><i>¿Qué sucede entonces cuando hemos escuchado al otro, lo hemos comprendido, pero seguimos
+                                opinando distinto?</i></b></p>
+
+                    <p>Covey, nos explica cuatro pasos:</p>
+                    <ol class="lista-en-articulos">
+                        <li>Preguntarle a la otra persona, ¿Estás dispuesto a buscar una solución mejor que la que hemos
+                            encontrado cada uno por separado?</li>
+
+                        <li>Preguntar que sería lo mejor para esa situación.</li>
+
+                        <li>Hacer un brainstorming o lluvia de ideas juntos.</li>
+
+                        <li>El cuarto paso sucede de forma natural, una vez que nadie está defiendo su propia idea, una
+                            de
+                            las ideas propuestas cobra sentido.</li>
+                    </ol>
+                    <p class="texto-centrado"><b><i>“Más allá de nuestras ideas sobre lo que está bien y lo que está
+                                mal, existe un campo… allí
+                                te encontraré” - </i>RUMI</b></p>
+
+                    <p>Leyendo acerca de diferentes estrategias de resolución de conflictos que plantean diversos
+                        autores, encontré una forma práctica de prevenir algunas situaciones incómodas y que no había
+                        escuchado antes.</p>
+
+                    <p>Se llama: <b>La Silla Vacía</b>. Es una de las técnicas dentro de la terapia Gestalt y se dio a
+                        conocer por el CEO número uno de Estados Unidos, Jeff Bezos.</p>
+                    <img src="multimedia/imagen-silla.jpg" alt="imagen-silla">
+
+                    <p>Jeff, es el hombre que transformó Amazon en uno de los casos de empresas más famosos del mundo.
+                        Él nos cuenta que la clave del éxito estaba en que cada reunión que tenían con su equipo, se
+                        ponía una silla vacía en donde Jeff les pedía que se imaginasen que en esa silla estaba la
+                        persona más importante: <b>El CLIENTE</b>.</p>
+
+                    <p>De los quinientos objetivos anuales que tiene la empresa, el 80% surgen de preguntarle a la silla
+                        vacía, que quiere y que necesita el cliente. Según la revista <i>Forbes,</i> esta estrategia
+                        hizo que la empresa creciera un 397% y fue la que permitió a Jeff Bezos anticiparse a lo que
+                        quieren los clientes y convertir en ganancia ese conocimiento.</p>
+
+                    <p><b><i>La clave está en anticipar lo que el otro necesita, ¿Cómo se utiliza esta estrategia?,
+                                ¿Para qué situaciones?</i></b></p>
+
+                    <p>Antes de tener alguna conversación difícil con una persona, antes de pensar en pedirle algo,
+                        antes de decir cualquier novedad o noticia que pueda tener algún tipo de impacto que intuimos
+                        que puede generar conflicto; podemos poner una silla vacía frente a nosotros e imaginarnos que
+                        la otra persona está ahí sentada escuchándonos.</p>
+
+                    <p>Ahí es el momento para preguntarnos las siguientes preguntas:</p>
+                    <ul class="lista-en-articulos">
+                        <li>¿Qué es lo que le quiero decir?</li>
+
+                        <li>¿Qué necesita esta persona de mí?</li>
+
+                        <li>¿Cuál será la mejor manera de plantear este tema?</li>
+                    </ul>
+                    <p>Esta estrategia no solo nos permite evitar conflictos de forma anticipada, sino también que nos
+                        abre la creatividad en nuestra mente para poder diseñar diferentes formas de conversar y
+                        plantear ideas a otros.</p>
+
+                    <p><b><i>¿Te animarías a probar esta estrategia?</i></b><i> <b>Pregúntate que necesitan las personas
+                                de ti y que es lo mejor que puedes ofrecer.</b></i></p>
+
+                    <div class="firma-articulos">
+                        <img class="firma-articulos__imagen" src="multimedia/firma-caro.png" alt="firma-caro">
+                    </div>
+                    <center><a href="articulos-ser-responsables.html"><input class="articulos__boton--volver"
+                                type="button" value="Volver a página anterior"></a></center>
+                </div>
+            </div>
+
+        </section>
+
+        <!--footer-->
+        <footer>
+
+            <div class="flechaArriba">
+                <a class="botonArriba" href="#arriba"><i class="fas fa-chevron-up fa-2x"></i></a>
+            </div>
+            <h5>Sigamos Conectados.</h5>
+            <ul class="linkApps">
+                <li>
+                    <a href="https://www.instagram.com/caromontalto/"><i class="fab fa-instagram-square fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/carolinamontalto/"><i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="spotify:show:53R9r9pmX4kcqh6r6RKcFM"><i class="fab fa-spotify fa-2x"></i></a>
+                </li>
+            </ul>
+            <h6 class="footer-texto">©2020-Caro Montalto-Terminos y Condiciones-Políticas de Privacidad</h6>
+            <h6 class="footer-texto">Diseñada y construida por M.A design.</h6>
+        </footer>
+    </div>
+
+
+
+
+
+    <!--no tocar css-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

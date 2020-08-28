@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  
+
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
     <!-- Brand -->
@@ -87,7 +87,11 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          <form class="containerForm">
+          <form form action="https://formsubmit.co/magui.alonso.g@gmail.com" method="POST" class="containerForm">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html" />
+            <input type="hidden" name="_subject" value="Nuevo mensaje, Caro Montalto Web!" />
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
             <ul class="form">
               <li>
                 <label for="nombre">Nombre:</label>
@@ -111,7 +115,7 @@
                 <label for="message">Deja tu mensaje:</label>
               </li>
               <li>
-                <textarea rows="3"></textarea>
+                <textarea name="message" rows="4" required></textarea>
               </li>
               <li>
                 <input class="botonEnviar" type="submit" value="Enviar">
@@ -138,21 +142,21 @@
           <div class="carousel-item active">
             <img id="imagen-carousel" src="multimedia/articulos.jpg" class="d-block w-100" alt="imagen-articulos">
             <div class="carousel-caption">
-              <h4 class="titulo-slide">Articulos</h4>
+              <h4 class="titulo-slide">ARTICULOS</h4>
               <a href="articulos.html"><button type="button" id="boton-slide" class="btn btn-dark ">LEER</button></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="multimedia/frases.jpg" class="d-block w-100" alt="imagen-frases">
             <div class="carousel-caption">
-              <h4 class="titulo-slide">Frases</h4>
+              <h4 class="titulo-slide">FRASES</h4>
               <a href="frases.html"><button type="button" id="boton-slide" class="btn btn-dark">VER</button></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="multimedia/podcast.jpg" class="d-block w-100" alt="imagen-podcast">
             <div class="carousel-caption">
-              <h4 class="titulo-slide">Podcast</h4>
+              <h4 class="titulo-slide">PODCAST</h4>
               <a href="podcast.html"><button type="button" id="boton-slide" class="btn btn-dark">ESCUCHAR</button></a>
             </div>
           </div>
@@ -176,7 +180,12 @@
         </p>
         <img class="index-firma" src="multimedia/firma-caro.png" alt="firma-caro">
       </div>
-      <form class="containerBotonSubscribir">
+
+      <form form action="https://formsubmit.co/magui.alonso.g@gmail.com" method="POST" class="containerBotonSubscribir">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias-suscribirse.html" />
+        <input type="hidden" name="_subject" value="Nuevo mensaje, Caro Montalto Web!" />
+        <input type="text" name="_honey" style="display: none" />
+        <input type="hidden" name="_captcha" value="false" />
         <ul class="botonsubscribir">
           <li class="label1">
             <label for="email">Recibe Novedades:</label>
@@ -187,6 +196,9 @@
         </ul>
         <input class="botonSubs" type="submit" value="Subscribirse">
       </form>
+      <a href="gracias.html">gracias</a>
+      <a href="gracias-suscribirse.html">suscribirse</a>
+
     </section>
 
     <!--footer-->

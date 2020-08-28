@@ -10,9 +10,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap');
 
-.body-background {
-    background-color: black;
-}
+
 
 /* grid1= index/biografia/contacto*/
 
@@ -122,6 +120,7 @@ p {
 .carousel-control-next {
     margin-top: 50px;
 }
+
 .carousel-control-prev {
     margin-top: 50px;
 }
@@ -147,29 +146,35 @@ p {
 }
 
 
-@keyframes yourAnimation{
-    0%{
+@keyframes yourAnimation {
+    0% {
         transform: rotate(0) translateY(-20%);
         opacity: 0;
-        }
-    100%{
+    }
+
+    100% {
         transform: rotate(0) translateX(0);
         opacity: 1;
-        }
+    }
 }
+
 .titulo-slide {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     animation: yourAnimation 3s forwards 0s ease;
 
 }
-@keyframes yourAnimation{
-    0%{
+
+@keyframes yourAnimation {
+    0% {
         transform: rotate(0) translateY(-20%);
         opacity: 0;
-        }
-    100%{
+    }
+
+    100% {
         transform: rotate(0) translateX(0);
         opacity: 1;
-        }
+    }
 }
 
 
@@ -359,7 +364,7 @@ p {
 
 /* Articulos = Ser Conscientes*/
 
-.h2articulosSC {
+.h2-SC {
     background-color: #e78a87;
     text-align: center;
     padding: 10px;
@@ -372,7 +377,7 @@ p {
 
 }
 
-.h3serConscientes {
+.h3-titulo {
     text-align: center;
     padding: 10px;
     color: #262626;
@@ -386,8 +391,7 @@ p {
 
 .bordeH3SC {
     border-bottom: #e78a87 2px solid;
-    margin-left: 70px;
-    margin-right: 70px;
+    width: 90%;
 }
 
 .contenedor-articulos {
@@ -554,7 +558,7 @@ p {
 .texto-centrado {
     text-align: center;
     padding-left: 10px;
-    
+
 }
 
 .sangria {
@@ -619,7 +623,7 @@ p {
 
 /* Articulos = Ser Responsables*/
 
-.h2articulosSR {
+.h2-SR {
     background-color: #a1be95;
     text-align: center;
     padding: 10px;
@@ -631,27 +635,16 @@ p {
     letter-spacing: 2px;
 }
 
-.h3serResponsables {
-    text-align: center;
-    padding: 10px;
-    color: #262626;
-    margin-top: 10px;
-    font-family: 'CaviarDreams';
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
 
 .bordeH3SR {
     border-bottom: #a1be95 2px solid;
-    margin-left: 70px;
-    margin-right: 70px;
+    width: 90%;
+
 }
 
 /* Articulos = Vivir con Valores*/
 
-.h2articulosVV {
+.h2-VV {
     background-color: #92aac7;
     text-align: center;
     padding: 10px;
@@ -663,27 +656,14 @@ p {
     letter-spacing: 2px;
 }
 
-.h3serVivirConValores {
-    text-align: center;
-    padding: 10px;
-    color: #262626;
-    margin-top: 10px;
-    font-family: 'CaviarDreams';
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 .bordeH3VV {
     border-bottom: #92aac7 2px solid;
-    margin-left: 70px;
-    margin-right: 70px;
+    width: 90%;
 }
 
 /* Frases*/
 
-.h2-frase-sc {
+.h2-SC {
     background-color: #e78a87;
     text-align: center;
     padding: 10px;
@@ -695,60 +675,7 @@ p {
     letter-spacing: 2px;
 
 }
-.h2-frase-sr {
-    background-color: #a1be95;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    margin-top: 65px;
-    margin-bottom: 0;
-    font-family: 'CaviarDreams';
-    font-size: 20px;
-    letter-spacing: 2px;
 
-}
-.h2-frase-vv {
-    background-color: #92aac7;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    margin-top: 65px;
-    margin-bottom: 0;
-    font-family: 'CaviarDreams';
-    font-size: 20px;
-    letter-spacing: 2px;
-
-}
-
-.h3frases {
-    text-align: center;
-    padding: 10px;
-    color: #212832;
-    margin-top: 10px;
-    font-family: 'CaviarDreams';
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.bordefrasesSC {
-    border-bottom: #e78a87 3px solid;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.bordefrasesSR {
-    border-bottom: #a1be95 3px solid;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.bordefrasesVV {
-    border-bottom: #92aac7 3px solid;
-    margin-left: 100px;
-    margin-right: 100px;
-}
 
 .frases {
     display: flex;
@@ -757,16 +684,18 @@ p {
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 50px;
+
 }
+
 .frases-imagenes-redes {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
-}
 
+
+}
 
 .frases-imagenes-redes--iconos {
     color: #3d495c;
@@ -779,7 +708,7 @@ p {
     }
 }
 
-.frases__imagen{
+.frases__imagen {
     width: 90%;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -801,10 +730,12 @@ p {
     letter-spacing: 1px;
     border-radius: 3px;
     font-weight: bold;
+
     &:hover {
         transform: scale(1.01, 1.01);
     }
 }
+
 .frases__boton--sr {
     font-family: 'Raleway', sans-serif;
     color: #a1be95;
@@ -815,10 +746,12 @@ p {
     letter-spacing: 1px;
     border-radius: 3px;
     font-weight: bold;
+
     &:hover {
         transform: scale(1.01, 1.01);
     }
 }
+
 .frases__boton--vv {
     font-family: 'Raleway', sans-serif;
     color: #92aac7;
@@ -829,10 +762,12 @@ p {
     letter-spacing: 1px;
     border-radius: 3px;
     font-weight: bold;
+
     &:hover {
         transform: scale(1.01, 1.01);
     }
 }
+
 #frases-icono-flecha {
     font-size: 70px;
     color: #3d495c;
@@ -853,7 +788,7 @@ p {
     @include sizes(320px, 320px);
     margin-top: 40px;
     margin-bottom: 20px;
-    
+
 }
 
 /* Podcast*/
@@ -861,7 +796,8 @@ p {
 #section-fondo {
     background-color: #b9bac3;
 }
-.h2-frase-podcast {
+
+.h2-podcast {
     background-color: #3d495c;
     text-align: center;
     padding: 10px;
@@ -894,18 +830,20 @@ p {
     margin-top: 30px;
     box-shadow: #645C54 15px 5px 15px;
     width: 90%;
-    
+
 
 }
-@keyframes yourAnimation{
-    0%{
+
+@keyframes yourAnimation {
+    0% {
         transform: rotate(0) translateY(-10%);
         opacity: 0;
-        }
-    100%{
+    }
+
+    100% {
         transform: rotate(0) translateY(0);
         opacity: 1;
-        }
+    }
 }
 
 .podcast-imagen {
@@ -1166,6 +1104,46 @@ footer {
     scroll-padding-right: 3px;
 }
 
+/* pagina gracias formulario*/
+
+
+.contenedor-gracias {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../multimedia/4685.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: fixed;
+    height: 65vh;
+    width: 100%;
+    margin-top: 65px;
+
+}
+
+.texto-gracias-h4 {
+    font-family: 'CaviarDreams';
+    color: #393d46;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.texto-gracias-h5 {
+    font-family: 'CaviarDreams';
+    color: #3d495c;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.firma-gracias {
+    width: 150px;
+    height: 37px;
+}
+
+
+
 /* MEDIA QUERY*/
 @media only screen and (min-width: 769px) {
 
@@ -1174,25 +1152,18 @@ footer {
         height: 600px;
     }
 
-    .carousel-caption {
-        background-image: url();
-    }
     #boton-slide {
         border: white solid 3px;
         @include sizes(100px, 40px);
         margin-bottom: 60px;
         margin-top: 20px;
-        
+
     }
-    
+
     .titulo-slide {
         font-size: 80px;
         padding-bottom: 100px;
-       
-
     }
-    
-
     .frasePrincipal p {
         font-size: 25px;
         margin: 20px 100px 20px 100px;
@@ -1251,7 +1222,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    
+
     /* biografia*/
 
     .parrafoacercaDeMi {
@@ -1356,11 +1327,11 @@ footer {
 
     /* frases*/
 
-    .frases__imagen{
+    .frases__imagen {
         @include sizes(350px, 350px);
-        
+
     }
-    
+
 
     /* pagina de cada frase*/
 
@@ -1428,10 +1399,32 @@ footer {
     .linkApps {
         font-size: 15px;
     }
+
+    .contenedor-gracias {
+        
+        height: 85vh;
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    .texto-gracias-h4 {
+        font-size: 40px;
+        margin-top: 180px;
+    }
+
+    .texto-gracias-h5 {
+        font-size: 40px;
+        
+    }
+    .firma-gracias {
+        width: 250px;
+        height: 63px;
+    }
 }
 
 /* MEDIA QUERY*/
-@media (min-width: 400px) and (max-width: 760px) {
+@media (min-width: 400px) and (max-width: 768px) {
     /* podcast*/
 
     .carousel-inner .carousel-item img {
@@ -1440,16 +1433,39 @@ footer {
     }
 
     #boton-slide {
+        
         margin-bottom: 5px;
         margin-top: 50px;
-       
+
+    }
+    .titulo-slide {
+        font-size: 35px;
+    }
+    .firma-gracias {
+        width: 250px;
+        height: 63px;
     }
     
 
-    .titulo-slide {
-        font-size: 35px;
+}
+@media (min-width: 768px) and (max-width: 769px) {
+    .contenedor-gracias {
         
-
+        height: 80vh;
+        width: 100%;
+        margin-top: 65px;
+    
+    }
+    
+    .texto-gracias-h4 {
+        
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    
+    .texto-gracias-h5 {
+       
+        font-size: 35px;
     }
     
 }
