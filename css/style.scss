@@ -1020,21 +1020,25 @@ input {
     margin-bottom: 10px;
 }
 
-.botonEnviar:hover {
-    background-color: #393d46;
-    color: white;
+.label-form {
+    font-weight: bold;
 }
+
+
 
 input:hover,
 textarea:hover {
     background-color: whitesmoke;
 }
 
-.botonEnviar {
+#botonEnviar {
     background: white;
     font-size: 15px;
-    width: 100px;
-    text-align: center;
+
+    &:hover {
+        background-color: #393d46;
+        color: white;
+    }
 }
 
 textarea {
@@ -1137,6 +1141,7 @@ footer {
     font-size: 20px;
     margin-bottom: 50px;
 }
+
 .firma-gracias {
     width: 150px;
     height: 37px;
@@ -1164,6 +1169,7 @@ footer {
         font-size: 80px;
         padding-bottom: 100px;
     }
+
     .frasePrincipal p {
         font-size: 25px;
         margin: 20px 100px 20px 100px;
@@ -1401,7 +1407,7 @@ footer {
     }
 
     .contenedor-gracias {
-        
+
         height: 85vh;
         width: 100%;
         margin-top: 50px;
@@ -1415,8 +1421,9 @@ footer {
 
     .texto-gracias-h5 {
         font-size: 40px;
-        
+
     }
+
     .firma-gracias {
         width: 250px;
         height: 63px;
@@ -1433,39 +1440,42 @@ footer {
     }
 
     #boton-slide {
-        
+
         margin-bottom: 5px;
         margin-top: 50px;
 
     }
+
     .titulo-slide {
         font-size: 35px;
     }
+
     .firma-gracias {
         width: 250px;
         height: 63px;
     }
-    
+
 
 }
+
 @media (min-width: 768px) and (max-width: 769px) {
     .contenedor-gracias {
-        
+
         height: 80vh;
         width: 100%;
         margin-top: 65px;
-    
+
     }
-    
+
     .texto-gracias-h4 {
-        
+
         font-size: 40px;
         margin-top: 50px;
     }
-    
+
     .texto-gracias-h5 {
-       
+
         font-size: 35px;
     }
-    
+
 }

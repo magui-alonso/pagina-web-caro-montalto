@@ -1201,9 +1201,8 @@ input {
   margin-bottom: 10px;
 }
 
-.botonEnviar:hover {
-  background-color: #393d46;
-  color: white;
+.label-form {
+  font-weight: bold;
 }
 
 input:hover,
@@ -1211,11 +1210,14 @@ textarea:hover {
   background-color: whitesmoke;
 }
 
-.botonEnviar {
+#botonEnviar {
   background: white;
   font-size: 15px;
-  width: 100px;
-  text-align: center;
+}
+
+#botonEnviar:hover {
+  background-color: #393d46;
+  color: white;
 }
 
 textarea {
