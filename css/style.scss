@@ -285,6 +285,7 @@ p {
 
     color: white;
     font-style: oblique;
+    font-size: 15px;
     letter-spacing: 2px;
     margin-top: 5px;
 }
@@ -768,28 +769,26 @@ p {
     }
 }
 
-#frases-icono-flecha {
-    font-size: 70px;
-    color: #3d495c;
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    &:hover {
-        opacity: 100%;
-    }
-}
-
-
-
 /* Pagina de cada frase ser consciente*/
 
 
 .contenedor-frase--imagen {
     @include sizes(320px, 320px);
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 
 }
+.atribucion-frase {
+    display: block;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #212832;
+    opacity: 60%;
+    margin-bottom: 10px;
+    
+}
+
+
 
 /* Podcast*/
 
@@ -1108,6 +1107,45 @@ footer {
     scroll-padding-right: 3px;
 }
 
+/* paginación*/
+
+ul.pagination {
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    background-color: #212832;
+    color: white;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 1px;
+    
+
+    &:hover {
+        background-color: white;
+        color: #212832;
+    }
+
+}
+
+ul.pagination li a.active {
+    background-color: #e2dfa2;
+    color: #212832;
+}
+.disabled {
+    background-color: #212832;
+    color: white;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 1px;
+}
+
 /* pagina gracias formulario*/
 
 
@@ -1230,7 +1268,10 @@ footer {
 
 
     /* biografia*/
-
+    .h3biografia {
+        font-size: 25px;
+        
+    }
     .parrafoacercaDeMi {
         margin-left: 200px;
         margin-right: 200px;
