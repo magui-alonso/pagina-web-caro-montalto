@@ -756,6 +756,10 @@ p {
           transform: scale(1.01, 1.01);
 }
 
+.imagenes-en-articulos {
+  width: 90%;
+}
+
 /* Articulos = Ser Responsables*/
 .h2-SR {
   background-color: #a1be95;
@@ -1569,6 +1573,9 @@ ul.pagination li a.active {
     margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
+  }
+  .imagenes-en-articulos {
+    width: 60%;
   }
   /* frases*/
   .frases__imagen {

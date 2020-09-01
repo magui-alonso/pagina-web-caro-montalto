@@ -95,37 +95,41 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form class="containerForm">
+                    <form form action="https://formsubmit.co/info@caromontalto.com" method="POST" class="containerForm">
+                        <input type="hidden" name="_next" value="https://www.caromontalto.com/gracias.html" />
+                        <input type="hidden" name="_subject" value="Nuevo mensaje, Caro Montalto Web!" />
+                        <input type="text" name="_honey" style="display: none" />
+                        <input type="hidden" name="_captcha" value="false" />
                         <ul class="form">
-                            <li>
-                                <label for="nombre">Nombre:</label>
-                            </li>
-                            <li>
-                                <input type="text" name="nombre">
-                            </li>
-                            <li>
-                                <label for="apellido">Apellido:</label>
-                            </li>
-                            <li>
-                                <input type="text" name="apellido">
-                            </li>
-                            <li>
-                                <label for="email">Email:</label>
-                            </li>
-                            <li>
-                                <input type="email" name="email">
-                            </li>
-                            <li>
-                                <label for="message">Deja tu mensaje:</label>
-                            </li>
-                            <li>
-                                <textarea rows="3"></textarea>
-                            </li>
-                            <li>
-                                <input class="botonEnviar" type="submit" value="Enviar">
-                            </li>
+                          <li>
+                            <label class="label-form" for="nombre">Nombre:</label>
+                          </li>
+                          <li>
+                            <input type="text" name="nombre">
+                          </li>
+                          <li>
+                            <label class="label-form" for="apellido">Apellido:</label>
+                          </li>
+                          <li>
+                            <input type="text" name="apellido">
+                          </li>
+                          <li>
+                            <label class="label-form" for="email">Email:</label>
+                          </li>
+                          <li>
+                            <input type="email" name="email">
+                          </li>
+                          <li>
+                            <label class="label-form" for="message">Deja tu mensaje:</label>
+                          </li>
+                          <li>
+                            <textarea name="message" rows="4" required></textarea>
+                          </li>
+                          <li>
+                            <input class="label-form" id="botonEnviar" type="submit" value="Enviar">
+                          </li>
                         </ul>
-                    </form>
+                      </form>
                 </div>
 
                 <!-- Modal footer -->
@@ -220,7 +224,7 @@
                     <div class="firma-articulos">
                         <img class="firma-articulos__imagen" src="multimedia/firma-caro.png" alt="firma-caro">
                     </div>
-                    <center><a href="articulos-ser-responsables.html"><input class="articulos__boton--volver"
+                    <center><a href="articulos-ser-responsables-1.html"><input class="articulos__boton--volver"
                                 type="button" value="Volver a página anterior"></a></center>
                 </div>
             </div>
