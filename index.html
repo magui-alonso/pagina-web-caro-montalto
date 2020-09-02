@@ -87,41 +87,35 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          <form form action="https://formsubmit.co/info@caromontalto.com" method="POST" class="containerForm">
-            <input type="hidden" name="_next" value="https://www.caromontalto.com/gracias.html" />
-            <input type="hidden" name="_subject" value="Nuevo mensaje, Caro Montalto Web!" />
-            <input type="text" name="_honey" style="display: none" />
-            <input type="hidden" name="_captcha" value="false" />
+          <form action="envia.php" method="post" class="containerForm">
+            
             <ul class="form">
               <li>
-                <label class="label-form" for="nombre">Nombre:</label>
+                <label class="label-form">Nombre y apellido: <span>*</span></label>
               </li>
               <li>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" required>
+              </li>
+              
+              <li>
+                <label class="label-form">Email: <span>*</span></label>
               </li>
               <li>
-                <label class="label-form" for="apellido">Apellido:</label>
+                <input type="email" name="email" required>
               </li>
               <li>
-                <input type="text" name="apellido">
+                <label class="label-form">Consulta:</label>
               </li>
               <li>
-                <label class="label-form" for="email">Email:</label>
-              </li>
-              <li>
-                <input type="email" name="email">
-              </li>
-              <li>
-                <label class="label-form" for="message">Deja tu mensaje:</label>
-              </li>
-              <li>
-                <textarea name="message" rows="4" required></textarea>
+                <textarea name="consulta" rows="4" ></textarea>
               </li>
               <li>
                 <input class="label-form" id="botonEnviar" type="submit" value="Enviar">
               </li>
             </ul>
           </form>
+          
+
         </div>
 
         <!-- Modal footer -->
