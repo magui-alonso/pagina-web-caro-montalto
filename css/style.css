@@ -55,6 +55,7 @@ h4 {
 p {
   font-family: 'Raleway', sans-serif;
   color: #262626;
+  text-align: justify;
 }
 
 .texto-resaltado {
@@ -218,12 +219,12 @@ p {
   font-style: oblique;
   font-weight: bolder;
   font-size: 15px;
-  text-align: center;
 }
 
 .frasePrincipal p {
   font-family: 'CaviarDreams';
   color: #262626;
+  text-align: center;
 }
 
 .index-firma {
@@ -374,7 +375,7 @@ p {
 .parrafoacercaDeMi {
   color: white;
   margin: 30px;
-  text-align: justify;
+  text-align: left;
 }
 
 .parrafoacercaDeMi p {
@@ -443,7 +444,6 @@ p {
 .masAcercaDeMi {
   margin: 30px;
   margin-top: 10px;
-  text-align: justify;
 }
 
 .masAcercaDeMi .masAcercaDeMi-parrafo {
@@ -817,6 +817,10 @@ p {
   font-weight: bold;
   -webkit-transform: scale(1.01, 1.01);
           transform: scale(1.01, 1.01);
+}
+
+p a {
+  color: black;
 }
 
 .imagenes-en-articulos {
