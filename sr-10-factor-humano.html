@@ -94,35 +94,27 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form form action="https://formsubmit.co/info@caromontalto.com" method="POST" class="containerForm">
-                        <input type="hidden" name="_next" value="https://www.caromontalto.com/gracias.html" />
-                        <input type="hidden" name="_subject" value="Nuevo mensaje, Caro Montalto Web!" />
-                        <input type="text" name="_honey" style="display: none" />
-                        <input type="hidden" name="_captcha" value="false" />
+                    <form action="envia.php" method="post" class="containerForm">
+            
                         <ul class="form">
+                  
                           <li>
-                            <label class="label-form" for="nombre">Nombre:</label>
+                            <label class="label-form" for="nombre y apellido">Nombre y Apellido:</label>
                           </li>
                           <li>
-                            <input type="text" name="nombre">
-                          </li>
-                          <li>
-                            <label class="label-form" for="apellido">Apellido:</label>
-                          </li>
-                          <li>
-                            <input type="text" name="apellido">
+                            <input type="text" name="nombre" required>
                           </li>
                           <li>
                             <label class="label-form" for="email">Email:</label>
                           </li>
                           <li>
-                            <input type="email" name="email">
+                            <input type="email" name="email" required>
                           </li>
                           <li>
                             <label class="label-form" for="message">Deja tu mensaje:</label>
                           </li>
                           <li>
-                            <textarea name="message" rows="4" required></textarea>
+                            <textarea name="message" rows="4"></textarea>
                           </li>
                           <li>
                             <input class="label-form" id="botonEnviar" type="submit" value="Enviar">
