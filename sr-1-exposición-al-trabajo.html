@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Aquí podrás encontrar artículos con una visión expansiva de liderazgo, en relación a un desarrollo profesional consciente.">
+    <meta name="description"
+        content="Aquí podrás encontrar artículos con una visión expansiva de liderazgo, en relación a un desarrollo profesional consciente.">
     <meta name="keywords" content="consciencia, coaching, desarrollo, crecimiento personal, crecimiento profesional, emociones,
         equipos, confort, mente, inteligencia intuitiva, inteligencia emocional, competencias, vulnerabilidad, liderazgo, diversidad, comunicación,
         factor humano, focus">
+    <meta property="og:title" content="Caro Montalto|Artículo|¿Cómo experimentas tu autoestima?" />
+    <meta property="og:description"
+        content="Aquí podrás encontrar artículos que te invitan a reflexionar como así también conocer herramientas que potencien tu crecimiento personal." />
+    <meta property="og:url" content="https://www.caromontalto.com/sr-1-exposici%C3%B3n-al-trabajo.html" />
+    <meta property="og:image" content="http://www.caromontalto.com/multimedia/img-art/sr-art-1.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="270" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -18,6 +26,15 @@
     <script src="https://kit.fontawesome.com/7a5f78019b.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Caro Montalto|Artículo|¿Se tiene consciencia de la exposición cotidiana al trabajo?</title>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178066384-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178066384-1');
+</script>
 </head>
 
 <body>
@@ -40,8 +57,8 @@
                 </li>
                 <!-- Dropdown -->
                 <li class="nav-item dropdown">
-                    <a id="link-nav" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a id="link-nav" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Artículos
                     </a>
                     <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
@@ -55,8 +72,8 @@
                 </li>
                 <!-- Dropdown 2-->
                 <li class="nav-item dropdown">
-                    <a id="link-nav" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a id="link-nav" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Frases
                     </a>
                     <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
@@ -70,6 +87,12 @@
                 <li class="nav-item">
                     <a id="link-nav" class="nav-link" href="podcast.html">Podcast</a>
                 </li>
+                <li class="nav-item">
+                    <a id="link-nav" class="nav-link" href="ebook.html">eBooks</a>
+                  </li>
+                <li class="nav-item">
+                    <a id="link-nav" class="nav-link" href="recomendaciones.html">Recomendaciones</a>
+                  </li>
                 <li class="nav-item">
                     <!-- Button to Open the Modal -->
                     <button type="button" id="boton-modal-contacto" class="btn btn-outline-warning" data-toggle="modal"
@@ -95,32 +118,32 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <form action="envia.php" method="post" class="containerForm">
-            
+
                         <ul class="form">
-                  
-                          <li>
-                            <label class="label-form" for="nombre y apellido">Nombre y Apellido:</label>
-                          </li>
-                          <li>
-                            <input type="text" name="nombre" required>
-                          </li>
-                          <li>
-                            <label class="label-form" for="email">Email:</label>
-                          </li>
-                          <li>
-                            <input type="email" name="email" required>
-                          </li>
-                          <li>
-                            <label class="label-form" for="message">Deja tu mensaje:</label>
-                          </li>
-                          <li>
-                            <textarea name="message" rows="4"></textarea>
-                          </li>
-                          <li>
-                            <input class="label-form" id="botonEnviar" type="submit" value="Enviar">
-                          </li>
+
+                            <li>
+                                <label class="label-form" for="nombre y apellido">Nombre y Apellido:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="nombre" required>
+                            </li>
+                            <li>
+                                <label class="label-form" for="email">Email:</label>
+                            </li>
+                            <li>
+                                <input type="email" name="email" required>
+                            </li>
+                            <li>
+                                <label class="label-form" for="message">Deja tu mensaje:</label>
+                            </li>
+                            <li>
+                                <textarea name="message" rows="4"></textarea>
+                            </li>
+                            <li>
+                                <input class="label-form" id="botonEnviar" type="submit" value="Enviar">
+                            </li>
                         </ul>
-                      </form>
+                    </form>
                 </div>
 
                 <!-- Modal footer -->
@@ -140,8 +163,9 @@
             <h2 class="h2-SR">Ser Responsables</h2>
             <div class="container-articulo">
                 <img class="container-articulo__imagen"
-                    src="https://media-exp1.licdn.com/dms/image/C4D12AQHApy7ij7pXoQ/article-cover_image-shrink_720_1280/0?e=1603929600&v=beta&t=zy5fwRmHsmfrbO0Twl1lwazK_7xoLKZzLeZLLfYbNmg"
+                    src="multimedia/img-art/sr-art-1.jpg"
                     alt="imagen-articulo">
+                    <a class="atribucion-frase" href="https://www.freepik.es/fotos/negocios"​>Foto de Negocios creado por diana.grytsku - www.freepik.es </a>
                 <h3 class="container-articulo__titulo"><strong>¿Se tiene consciencia de la exposición cotidiana al
                         trabajo?</strong></h3>
                 <h6><strong>Compartir en:</strong></h6>
@@ -156,7 +180,7 @@
                         <iconify-icon class="container-articulo__icono" data-icon="ant-design:linkedin-filled">
                         </iconify-icon>
                     </a>
-                    
+
                 </div>
                 <div class="container-articulo__parrafo">
                     <p>Cuando el foco de crecimiento es la consciencia, es posible preguntarnos:<b> ¿Cuán conscientes
@@ -177,9 +201,11 @@
                     <p>El comportamiento y factores externos incontrolables influyen en los resultados que se convierten
                         en parte de la situación en la que la persona se encuentra en el momento siguiente.</p>
 
-                    <p class="sangria">- El comportamiento es incondicionado ya que no depende más que de la voluntad de la persona.</p>
+                    <p class="sangria">- El comportamiento es incondicionado ya que no depende más que de la voluntad de
+                        la persona.</p>
 
-                    <p class="sangria">- El resultado es condicionado porque depende parcialmente de factores ajenos a la voluntad.</p>
+                    <p class="sangria">- El resultado es condicionado porque depende parcialmente de factores ajenos a
+                        la voluntad.</p>
 
                     <p>Mediante las decisiones y acciones uno intenta utilizar sus habilidades y recursos (físicos,
                         intangibles) de la mejor manera posible, con el fin de perseguir sus objetivos, en congruencia
@@ -197,14 +223,16 @@
                     <p>Las reacciones y pensamientos automáticos son preconscientes, por eso es difícil impedir que
                         aparezcan y difícil contenerlos una vez que aparecieron.</p>
 
-                    <p class="texto-centrado"><b>Lo único que calma la guerrilla es generar paz interna, conociendo que cada acción conlleva a
+                    <p class="texto-centrado"><b>Lo único que calma la guerrilla es generar paz interna, conociendo que
+                            cada acción conlleva a
                             un objetivo doble:</b></p>
 
                     <p class="sangria">- Tener cierto resultado</p>
 
                     <p class="sangria">- Construir un propósito auto afirmativo de la identidad (paz)</p>
 
-                    <p class="texto-centrado"><b>“La acción es una respuesta del actor a los desafíos del entorno, por lo que la libertad para
+                    <p class="texto-centrado"><b>“La acción es una respuesta del actor a los desafíos del entorno, por
+                            lo que la libertad para
                             elegir cómo responder a una situación (responsabilidad) abre la puerta hacia la dimensión
                             ética de la existencia humana”</b></p>
 
@@ -215,7 +243,8 @@
 
                     <p>Por lo tanto…</p>
 
-                    <p class="texto-centrado"><b>“La dignidad humana no depende de la efectividad sino de la coherencia entre el comportamiento
+                    <p class="texto-centrado"><b>“La dignidad humana no depende de la efectividad sino de la coherencia
+                            entre el comportamiento
                             y los valores”</b></p>
 
                     <p><b>La pregunta de reflexión sería: ¿Cómo asumo mi responsabilidad?</b></p>
@@ -252,6 +281,9 @@
             <h5>Sigamos Conectados.</h5>
             <ul class="linkApps">
                 <li>
+                    <a href="https://www.facebook.com/Caro-Montalto-117137663463215"><i class="fab fa-facebook-square fa-2x"></i></a>
+                </li>
+                <li>
                     <a href="https://www.instagram.com/caromontalto/"><i class="fab fa-instagram-square fa-2x"></i></a>
                 </li>
                 <li>
@@ -261,10 +293,13 @@
                     <a href="spotify:show:53R9r9pmX4kcqh6r6RKcFM"><i class="fab fa-spotify fa-2x"></i></a>
                 </li>
                 <li>
-                    <a href="mailto:info@caromontalto.com?Subject=Contacto desde Caro Montalto.com"><i class="fas fa-envelope fa-2x"></i></a>
-                  </li>
+                    <a href="mailto:info@caromontalto.com?Subject=Contacto desde Caro Montalto.com"><i
+                            class="fas fa-envelope fa-2x"></i></a>
+                </li>
             </ul>
-            <a href="politica-de-privacidad.html"><h6 class="footer-texto">©2020-Caro Montalto-Terminos y Condiciones-Políticas de Privacidad</h6></a>
+            <a href="politica-de-privacidad.html">
+                <h6 class="footer-texto">©2020-Caro Montalto-Terminos y Condiciones-Políticas de Privacidad</h6>
+            </a>
             <h6 class="footer-texto">Diseñada y construida por M.A design.</h6>
         </footer>
     </div>
